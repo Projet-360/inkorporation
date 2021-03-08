@@ -1,0 +1,173 @@
+.ink-a {
+    .ink-a-js {
+        top: 0;
+        z-index: 0;
+
+        .ink-a-js-lefttop {
+            position: absolute;
+            text-shadow: -1px 5px 3px rgba(0, 0, 0, 1);
+            font-size: 20px;
+            width: 200px;
+            left: 20px;
+            top: 20px;
+            margin: 0;
+            transform: rotate(0deg);
+            text-transform: capitalize;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+            color: white;
+
+            &::after {
+                content: "Multidimensional composer";
+                transform: rotate(90deg);
+                position: absolute;
+                right: 20px;
+                top: 189px;
+                width: 350px;
+                font-weight: 100;
+            }
+        }
+
+        .ink-a-js-leftbottom {
+            position: absolute;
+            text-shadow: -1px 5px 3px rgba(0, 0, 0, 1);
+            font-size: 20px;
+            left: 20px;
+            bottom: 20px;
+            margin: 0;
+            transform: rotate(0deg);
+            text-transform: capitalize;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+            color: white;
+
+            &::after {
+                content: "2021";
+                transform: rotate(90deg);
+                position: absolute;
+                right: -17px;
+                top: 80px;
+                width: 270px;
+                font-weight: 100;
+            }
+        }
+
+        .ink-a-js-text {
+            position: absolute;
+            top: 40px;
+
+            .ink-a-js-text-title {
+                height: 9.5vw;
+                color: white;
+                text-shadow: -1px 5px 3px rgba(0, 0, 0, 1);
+                font-size: 9.5vw;
+                font-weight: 100;
+                text-transform: uppercase;
+                width: 100%;
+                margin: 0;
+                text-align: center;
+                font-family: "Raleway",sans-serif;
+                text-shadow: -1px 4px 5px rgba(0, 0, 0, 1);
+            }
+
+            .ink-a-js-text-subtitle {
+                position: absolute;
+                text-shadow: -1px 5px 3px rgba(0, 0, 0, 1);
+                color: #fff;
+                font-weight: 100;
+                font-style: italic;
+                margin: 0;
+                transform: rotate(90deg);
+                font-family: "Raleway",sans-serif;
+                top: 150px;
+                right: -165px;
+                width: 300px;
+            }
+
+            .ink-a-js-text-slogan {
+                position: absolute;
+                text-shadow: -1px 5px 3px rgba(0, 0, 0, 1);
+                color: #fff;
+                right: 0;
+                font-weight: 100;
+                font-style: italic;
+                margin: 0;
+                font-family: "Raleway",sans-serif;
+                line-height: 13px;
+                text-align: right;
+                font-size: small;
+            }
+        }
+
+        .ink-a-js-img {
+            width: 60vh;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .ink-a-js-link {
+            font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            transform: translate(0px, 36vh);
+            text-transform: uppercase;
+            z-index: 5;
+
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: stretch;
+            align-items: center;
+
+            .ink-a-js-link-a {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-content: stretch;
+                align-items: center;
+
+                color: rgb(255, 255, 255);
+                font-size: 25px;
+                font-family: Lato,"Helvetica Neue",Arial,Helvetica,sans-serif;
+                text-shadow: -1px 5px 3px rgba(0, 0, 0, 1);
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: 100;
+                z-index: 5;
+
+                padding: 0;
+                border: 2px solid #fff;
+                padding: 0;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                transition: all 0.8s ease;
+
+                &:hover {
+                    width: 70px;
+                    height: 70px;
+                    transform: rotate(90deg);
+                    color: rgb(0, 0, 0);
+                    font-size: 15px;
+                    border: 6px solid rgb(0, 0, 0);
+                }
+            }
+        }
+    }
+
+    
+
+    svg {
+        filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=NaN, Strength=5);
+      }
+
+      path {
+        fill:url(#logo-gradient);
+        transition: all 2s ease;
+        stop {
+          -webkit-transition: 2s ease;
+          transition: 2s ease;
+        }
+      }
+}

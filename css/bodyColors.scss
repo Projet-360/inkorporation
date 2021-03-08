@@ -1,0 +1,30 @@
+.body-ink {
+  background-color: #070a10;
+  transition: background-color 1s ease;
+  margin: 0;
+}
+
+.body-ink.b {
+  background-color: #93a7dc !important;
+  transition: background-color .3s ease;
+}
+
+.body-ink.c {
+  background-color: #d8d8d8 !important;
+  transition: background-color 1s ease;
+}
+
+.body-ink.d {
+  background-color: #a15f5f !important;
+  transition: background-color 1s ease;
+}
+
+.body-ink.e {
+  background-color: #00b302 !important;
+  transition: background-color 1s ease;
+}
+
+.body-ink.f {
+  background-color:  #111111!important;
+  transition: background-color 1s ease;
+}

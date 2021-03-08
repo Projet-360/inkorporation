@@ -1,0 +1,73 @@
+.ink-d {
+  height: 100vh !important;
+
+  // SCROLLMAGIC
+  .ink-d-js.d {
+    transform: scale(1) translate(0vw) !important;
+    position: fixed;
+    opacity: 1;
+  }
+
+  .ink-d-js.dOut {
+    position: fixed;
+    transform: translate(100%, -20%) !important;
+  }
+  // FIN SCROLLMAGIC
+
+  .ink-d-js {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    flex-direction: column;
+    background-color: yellow;
+
+    .ink-d-js-title {
+      width: 100%;
+      text-align: center;
+    }
+
+    .ink-d-js-text {
+      width: 50vw;
+      text-align: justify;
+    }
+
+    .ink-d-js-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-content: stretch;
+      align-items: center;
+
+      .ink-d-js-container-item {
+        width: 360px;
+        margin: 30px;       
+  
+        .ink-d-js-container-item-img {
+          width: 73px;
+          display: block;
+          margin-right: auto;
+          margin-left: auto;
+        }
+  
+        .ink-d-js-container-item-title {
+          font-size: larger;
+          text-transform: uppercase;
+          text-align: center;
+        }
+
+        .ink-d-js-container-item-text {
+          text-align: justify;
+        }
+
+        .ink-d-js-container-item-play {
+          width: 40px;
+          display: block;
+          margin-right: auto;
+          margin-left: auto;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
