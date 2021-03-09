@@ -82,29 +82,29 @@ var dTM = new ScrollMagic.Scene({
 
 
 
-dOutTM.add([
-  TweenMax.fromTo(".ink-d-js", 1, {
-    scale: 1,
-    x: "0%",
-    y:"0%",
-    ease: Linear.easeNone,
-    force3D: false
-  }, {
-    scale: 1,
-    x: "100%",
-    y: "-150%",
-    ease: Linear.easeNone,
-    force3D: false
-  }),
-]);
-
-var dOutTM = new ScrollMagic.Scene({
-    duration: '100%',
-    triggerElement: '.ink-d',
-    triggerHook: 0,
-  })
-  .setTween(dOutTM)
-  .addTo(d)
+  dOutTM.add([
+    TweenMax.fromTo(".ink-d-js", 1, {
+      scale: 1,
+      y: "0%",
+      opacity: 1,
+      ease: Linear.easeNone,
+      force3D: false
+    }, {
+      scale: 40,
+      y: "0%",
+      opacity: 1,
+      force3D: false,
+      ease: Linear.easeNone,
+    }),
+  ]);
   
+  var dOutTM = new ScrollMagic.Scene({
+      duration: '100%',
+      triggerElement: '.ink-d',
+      triggerHook: 0,
+    })
+  
+    .setTween(dOutTM)
+    .addTo(d)
   
 // FIN d____________________________________________________________________________________________

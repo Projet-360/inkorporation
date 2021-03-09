@@ -1,57 +1,72 @@
-var eInTM = new TimelineMax();
+//e_________________________________________________________________________________________________
 var e = new ScrollMagic.Controller();
+var seteTM = new TimelineMax();
+var eTM = new TimelineMax();
 var eOutTM = new TimelineMax();
+var ePreTM = new TimelineMax();
 
 
-eOutTM.add([
+seteTM.add([
   TweenMax.fromTo(".ink-e-js", 1, {
-    x: "0%",
-    y: "0%",
-    scale: 1,
-    opacity: 1,
-    ease: Linear.easeNone,
-    force3D: false
+    scale: 0,
   }, {
-    x: "0%",
-    y: "0%",
-    scale: 20,
-    opacity: 1,
-    ease: Linear.easeNone,
-    force3D: false
+    scale: 0,
   }),
 ]);
 
-var eOutTM = new ScrollMagic.Scene({
+var seteTM = new ScrollMagic.Scene({
     duration: '100%',
-    triggerElement: '.ink-e',
-    triggerHook: 0,
+    triggerElement: '.ink-a',
+    triggerHook: 1,
   })
-  .setTween(eOutTM)
+  .setTween(seteTM)
   .addTo(e)
 
-  
-eInTM.add([
+ePreTM.add([
   TweenMax.fromTo(".ink-e-js", 1, {
-    opacity: 0,
-    x: "-110%",
-    y: "150%",
-    scale: 1, 
+    scale: 0,
+    opacity: -0.5,
+    y: "0%",
     ease: Linear.easeNone,
     force3D: false
   }, {
+    scale: 0.02,
     opacity: 1,
-    x: "0%",
     y: "0%",
-    scale: 1,
     ease: Linear.easeNone,
     force3D: false
   }),
 ]);
 
-var eInTM = new ScrollMagic.Scene({
+var ePreTM = new ScrollMagic.Scene({
+    duration: '100%',
+    triggerElement: '.ink-d',
+    triggerHook: 1,
+  })
+  .setTween(ePreTM)
+  .addTo(d)
+
+
+eTM.add([
+  TweenMax.fromTo(".ink-e-js", 1, {
+    scale: 0.02,
+    y: "0%",
+    position: "fixed",
+    ease: Linear.easeNone,
+    force3D: false
+  }, {
+    scale: 1,
+    y: "0%",
+    position: "fixed",
+    ease: Linear.easeNone,
+    force3D: false
+  }),
+]);
+
+var eTM = new ScrollMagic.Scene({
     duration: '100%',
     triggerElement: '.ink-d',
     triggerHook: 0,
   })
-  .setTween(eInTM)
+  .setTween(eTM)
   .addTo(e)
