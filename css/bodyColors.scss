@@ -2,21 +2,31 @@
   background-color: #070a10;
   transition: background-color 1s ease;
   margin: 0;
+  .twinkling {
+    opacity: 0;
+  }
 }
 
 .body-ink.b {
   background-color: #93a7dc !important;
-  transition: background-color .3s ease;
+  transition: background-color 1s ease;
 }
 
 .body-ink.c {
   background-color: #d8d8d8 !important;
   transition: background-color 1s ease;
+
+  background: url("http://www.script-tutorials.com/demos/360/images/stars.png") repeat top center;
+  z-index: 0;
 }
 
 .body-ink.d {
-  background-color: #a15f5f !important;
+  background-color: black !important;
   transition: background-color 1s ease;
+  .twinkling {
+    opacity: 1;
+    transition: all 1s ease 1s;
+  }
 }
 
 .body-ink.e {
