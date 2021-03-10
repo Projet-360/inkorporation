@@ -65,5 +65,54 @@
                 cursor: pointer;
             }
         }
+
+        
+svg {
+    height: 90vmin;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .depthmap,
+  .deep-depthmap {
+    mix-blend-mode: soft-light;
+    // opacity: .6
+  }
+  
+  .shadows {
+    mix-blend-mode: multiply
+  }
+  
+  .highlight {
+    mix-blend-mode: screen
+  }
+  
+  .weather {
+    opacity: .2;
+    mix-blend-mode: overlay
+  }
+  
+  .planet {
+    transform: rotate(-5deg);
+    transform-origin: 50% 50%;
+    
+    image {
+      animation: rotation 200s linear infinite
+    }
+    
+    .weather {
+      animation: rotation 100s linear infinite
+    }
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: translate(0,0)
+    }
+    100% {
+      transform: translate(-1000px,0)
+    }
+  }
     }
 }
