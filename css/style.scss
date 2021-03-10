@@ -195,3 +195,27 @@ body {
   -webkit-animation:move-stars-back 800s linear infinite;
   animation:move-stars-back 800s linear infinite;
 }
+
+.linear-wipe {
+  text-align: center;
+  
+  background: linear-gradient(to right,
+   #FFF 5%,
+   #ea00ff 40%,
+   #00e1ff 60%,
+   #FFF 92%);
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: shine 5s linear infinite;
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+}
