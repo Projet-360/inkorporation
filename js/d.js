@@ -73,15 +73,6 @@ var dTM = new ScrollMagic.Scene({
   .addTo(d)
 
 
-
-
-
-
-
-
-
-
-
   dOutTM.add([
     TweenMax.fromTo(".ink-d-js", 1, {
       scale: 1,

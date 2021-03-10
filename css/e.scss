@@ -5,7 +5,109 @@
     top: 0;
     position: fixed;
     z-index: 5;
-    background-color: violet;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    flex-direction: column;
+
+    .ink-e-js-text {
+      text-align: justify;
+      text-align-last: center;
+      margin-bottom: 0;
+    }
+
+    .ink-e-js-item {
+      border: 1px solid white;
+      padding: 20px;
+      z-index: 10;
+      width: 500px;
+      height: 500px;
+
+      .ink-e-js-item-img {
+        width: 73px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .ink-e-js-item-title {
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+        font-size: 170px;
+        font-weight: 100;
+        line-height: 180px;
+      }
+
+      .ink-e-js-item-text {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        line-height: 40px;
+        text-align: justify;
+        padding: 0px 25px;
+        margin-bottom: 0;
+      }
+
+      .ink-e-js-item-play {
+        width: 40px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        cursor: pointer;
+      }
+    }
+
+
+    svg {
+      height: 27vh;
+      /* position: absolute; */
+      /* top: 0; */
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .depthmap,
+    .deep-depthmap {
+      mix-blend-mode: soft-light;
+      // opacity: .6
+    }
+
+    .shadows {
+      mix-blend-mode: multiply
+    }
+
+    .highlight {
+      mix-blend-mode: screen
+    }
+
+    .weather {
+      opacity: .2;
+      mix-blend-mode: overlay
+    }
+
+    .planet {
+      transform: rotate(-5deg);
+      transform-origin: 50% 50%;
+
+      image {
+        animation: rotation 200s linear infinite
+      }
+
+      .weather {
+        animation: rotation 100s linear infinite
+      }
+    }
+
+    @keyframes rotation {
+      0% {
+        transform: translate(0, 0)
+      }
+
+      100% {
+        transform: translate(-1000px, 0)
+      }
+    }
   }
 }
-
