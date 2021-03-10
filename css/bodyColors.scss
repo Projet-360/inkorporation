@@ -4,20 +4,20 @@
   margin: 0;
   .twinkling {
     opacity: 0;
+    z-index: 0;
   }
 }
 
 .body-ink.b {
   background-color: #93a7dc !important;
-  transition: background-color 1s ease;
+  transition: background-color .3s ease, ;
+  background: none;
 }
 
 .body-ink.c {
   background-color: #d8d8d8 !important;
   transition: background-color 1s ease;
-
   background: url("http://www.script-tutorials.com/demos/360/images/stars.png") repeat top center;
-  z-index: 0;
 }
 
 .body-ink.d {

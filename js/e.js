@@ -44,7 +44,7 @@ var ePreTM = new ScrollMagic.Scene({
     triggerHook: 1,
   })
   .setTween(ePreTM)
-  .addTo(d)
+  .addTo(e)
 
 
 eTM.add([
