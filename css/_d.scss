@@ -80,59 +80,55 @@
     .depthmap,
     .deep-depthmap {
       mix-blend-mode: soft-light;
-      // opacity: .6
     }
-
+    
     .shadows {
-      mix-blend-mode: color-burn;
+      mix-blend-mode: multiply;
       opacity: .4;
     }
-
+    
     .highlight {
       mix-blend-mode: screen;
-      opacity: .8;
     }
-
-    .highlight2 {
-      mix-blend-mode: soft-light
-    }
-
+    
     .weather {
-      opacity: .5;
-      mix-blend-mode: overlay
+      opacity: 0.5;
+      mix-blend-mode: overlay;
     }
-
-    .weather2 {
-      opacity: .5;
-      mix-blend-mode: overlay
-    }
-
+    
     .planet {
       transform: rotate(-5deg);
       transform-origin: 50% 50%;
-
-      image {
-        animation: rotation 200s linear infinite
+    }
+    .planet image {
+      -webkit-animation: rotation 150s linear infinite;
+              animation: rotation 150s linear infinite;
+              opacity: .9;
+    }
+    .planet .weather {
+      -webkit-animation: rotation 70s linear infinite;
+              animation: rotation 70s linear infinite;
+              opacity: .5;
+    }
+    
+    @-webkit-keyframes rotation {
+      0% {
+        transform: translate(0, 0);
       }
-
-      .weather {
-        animation: rotation 150s linear infinite
-      }
-
-      .weather2 {
-        animation: rotation 300s linear infinite
+      100% {
+        transform: translate(-1000px, 0);
       }
     }
-
+    
     @keyframes rotation {
       0% {
-        transform: translate(0, 0)
+        transform: translate(0, 0);
       }
-
       100% {
-        transform: translate(-1000px, 0)
+        transform: translate(-1000px, 0);
       }
     }
+  
   }
 }
 

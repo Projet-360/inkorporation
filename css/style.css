@@ -1273,26 +1273,16 @@ html {
 }
 
 .ink-d .ink-d-js .shadows {
-  mix-blend-mode: color-burn;
+  mix-blend-mode: multiply;
   opacity: .4;
 }
 
 .ink-d .ink-d-js .highlight {
   mix-blend-mode: screen;
-  opacity: .8;
-}
-
-.ink-d .ink-d-js .highlight2 {
-  mix-blend-mode: soft-light;
 }
 
 .ink-d .ink-d-js .weather {
-  opacity: .5;
-  mix-blend-mode: overlay;
-}
-
-.ink-d .ink-d-js .weather2 {
-  opacity: .5;
+  opacity: 0.5;
   mix-blend-mode: overlay;
 }
 
@@ -1304,18 +1294,15 @@ html {
 }
 
 .ink-d .ink-d-js .planet image {
-  -webkit-animation: rotation 200s linear infinite;
-          animation: rotation 200s linear infinite;
+  -webkit-animation: rotation 150s linear infinite;
+  animation: rotation 150s linear infinite;
+  opacity: .9;
 }
 
 .ink-d .ink-d-js .planet .weather {
-  -webkit-animation: rotation 150s linear infinite;
-          animation: rotation 150s linear infinite;
-}
-
-.ink-d .ink-d-js .planet .weather2 {
-  -webkit-animation: rotation 300s linear infinite;
-          animation: rotation 300s linear infinite;
+  -webkit-animation: rotation 70s linear infinite;
+  animation: rotation 70s linear infinite;
+  opacity: .5;
 }
 
 @-webkit-keyframes rotation {
