@@ -1,16 +1,16 @@
-@import './scroll-bar.scss';
-@import './navigation.scss';
-@import './bodyColors.scss';
-@import './button.scss';
-@import './loader.scss';
-@import './menu.scss';
-
-@import './a.scss';
-@import './b.scss';
-@import './c.scss';
-@import './d.scss';
-@import './e.scss';
-@import './f.scss';
+@import 
+'_scroll-bar.scss',
+'_navigation.scss',
+'_bodyColors.scss',
+'_button.scss',
+'_loader.scss',
+'_menu.scss',
+'_a.scss',
+'_b.scss',
+'_c.scss',
+'_d.scss',
+'_e.scss',
+'_f.scss';
 
 html {
   overflow-x: hidden;

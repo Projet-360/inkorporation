@@ -69,7 +69,7 @@
 
 
     svg {
-      height: 25vh;
+      height: 30vh;
       /* position: absolute; */
       /* top: 0; */
       margin-left: auto;
@@ -84,15 +84,26 @@
     }
 
     .shadows {
-      mix-blend-mode: multiply
+      mix-blend-mode: color-burn;
+      opacity: .4;
     }
 
     .highlight {
-      mix-blend-mode: screen
+      mix-blend-mode: screen;
+      opacity: .8;
+    }
+
+    .highlight2 {
+      mix-blend-mode: soft-light
     }
 
     .weather {
-      opacity: .2;
+      opacity: .5;
+      mix-blend-mode: overlay
+    }
+
+    .weather2 {
+      opacity: .5;
       mix-blend-mode: overlay
     }
 
@@ -105,7 +116,11 @@
       }
 
       .weather {
-        animation: rotation 100s linear infinite
+        animation: rotation 150s linear infinite
+      }
+
+      .weather2 {
+        animation: rotation 300s linear infinite
       }
     }
 
