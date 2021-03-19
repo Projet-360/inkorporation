@@ -1222,16 +1222,61 @@ html {
 }
 
 .ink-d .ink-d-js .ink-d-js-item {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  border: 1px solid white;
+  padding: 0px 10px;
+  z-index: 10;
+}
+
+.ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-box {
+  -webkit-transform: translate3d(0px, -10px, 0px);
+          transform: translate3d(0px, -10px, 0px);
+}
+
+.ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-box .ink-d-js-item-box-img {
+=======
   z-index: 10;
 }
 
 .ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-img {
+>>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
   width: 73px;
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
 
+<<<<<<< HEAD
+.ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-box .ink-d-js-item-box-title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  font-size: 90px;
+  font-weight: 100;
+  line-height: 70px;
+}
+
+.ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-box .ink-d-js-item-box-text {
+  width: 264px;
+=======
 .ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-title {
   text-transform: uppercase;
   text-align: center;
@@ -1243,14 +1288,23 @@ html {
 
 .ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-text {
   width: 800px;
+>>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   margin-top: 0;
+<<<<<<< HEAD
+  line-height: 35px;
+  font-size: small;
+}
+
+.ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-box .ink-d-js-item-box-play {
+=======
   line-height: 40px;
 }
 
 .ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-play {
+>>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
   width: 40px;
   display: block;
   margin-right: auto;
@@ -1259,7 +1313,11 @@ html {
 }
 
 .ink-d .ink-d-js svg {
+<<<<<<< HEAD
+  height: 40vh;
+=======
   height: 30vh;
+>>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
   /* position: absolute; */
   /* top: 0; */
   margin-left: auto;
@@ -1357,10 +1415,29 @@ html {
   z-index: 5;
   color: white;
   font-family: "Raleway", sans-serif;
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+=======
+>>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+=======
+>>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
 }
 
 .ink-e .ink-e-js .ink-e-js-text {
@@ -1373,8 +1450,15 @@ html {
   border: 1px solid white;
   padding: 20px;
   z-index: 10;
+<<<<<<< HEAD
+  width: 325px;
+  height: 325px;
+  -webkit-transform: translate3d(0px, -40px, 0px);
+          transform: translate3d(0px, -40px, 0px);
+=======
   width: 500px;
   height: 500px;
+>>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
 }
 
 .ink-e .ink-e-js .ink-e-js-item .ink-e-js-item-img {
@@ -1388,18 +1472,31 @@ html {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
+<<<<<<< HEAD
+  font-size: 118px;
+  font-weight: 100;
+  line-height: 110px;
+=======
   font-size: 170px;
   font-weight: 100;
   line-height: 180px;
+>>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
 }
 
 .ink-e .ink-e-js .ink-e-js-item .ink-e-js-item-text {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
+<<<<<<< HEAD
+  line-height: 20px;
+  text-align: justify;
+  padding: 0px 0px;
+  font-size: small;
+=======
   line-height: 40px;
   text-align: justify;
   padding: 0px 25px;
+>>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
   margin-bottom: 0;
 }
 

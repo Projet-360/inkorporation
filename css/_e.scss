@@ -7,8 +7,14 @@
     z-index: 5;
     color: white;
     font-family: "Raleway", sans-serif;
+    
+    display: flex;
     flex-direction: column;
-
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    
     .ink-e-js-text {
       text-align: justify;
       text-align-last: center;
@@ -19,8 +25,9 @@
       border: 1px solid white;
       padding: 20px;
       z-index: 10;
-      width: 500px;
-      height: 500px;
+      width: 325px;
+      height: 325px;
+      transform: translate3d(0px, -40px, 0px);
 
       .ink-e-js-item-img {
         width: 73px;
@@ -33,18 +40,19 @@
         text-transform: uppercase;
         text-align: center;
         margin: 0;
-        font-size: 170px;
+        font-size: 118px;
         font-weight: 100;
-        line-height: 180px;
+        line-height: 110px;
       }
 
       .ink-e-js-item-text {
         margin-left: auto;
         margin-right: auto;
         margin-top: 0;
-        line-height: 40px;
+        line-height: 20px;
         text-align: justify;
-        padding: 0px 25px;
+        padding: 0px 0px;
+        font-size: small;
         margin-bottom: 0;
       }
 
