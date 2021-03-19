@@ -24,6 +24,7 @@
   margin-bottom: 0;
 }
 .ink-d .ink-d-js .ink-d-js-item {
+  border: 1px solid white;
   z-index: 10;
 }
 .ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-img {

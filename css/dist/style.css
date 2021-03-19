@@ -978,7 +978,7 @@ html {
   cursor: pointer;
 }
 .ink-d .ink-d-js svg {
-  height: 65vh;
+  height: 30vh;
   /* position: absolute; */
   /* top: 0; */
   margin-left: auto;
@@ -991,12 +991,13 @@ html {
 }
 .ink-d .ink-d-js .shadows {
   mix-blend-mode: multiply;
+  opacity: 0.4;
 }
 .ink-d .ink-d-js .highlight {
   mix-blend-mode: screen;
 }
 .ink-d .ink-d-js .weather {
-  opacity: 0.2;
+  opacity: 0.5;
   mix-blend-mode: overlay;
 }
 .ink-d .ink-d-js .planet {
@@ -1004,10 +1005,22 @@ html {
   transform-origin: 50% 50%;
 }
 .ink-d .ink-d-js .planet image {
-  animation: rotation 200s linear infinite;
+  -webkit-animation: rotation 150s linear infinite;
+  animation: rotation 150s linear infinite;
+  opacity: 0.9;
 }
 .ink-d .ink-d-js .planet .weather {
-  animation: rotation 100s linear infinite;
+  -webkit-animation: rotation 70s linear infinite;
+  animation: rotation 70s linear infinite;
+  opacity: 0.5;
+}
+@-webkit-keyframes rotation {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-1000px, 0);
+  }
 }
 @keyframes rotation {
   0% {
@@ -1047,7 +1060,12 @@ html {
   z-index: 5;
   color: white;
   font-family: "Raleway", sans-serif;
+  display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
 }
 .ink-e .ink-e-js .ink-e-js-text {
   text-align: justify;
@@ -1058,8 +1076,9 @@ html {
   border: 1px solid white;
   padding: 20px;
   z-index: 10;
-  width: 500px;
-  height: 500px;
+  width: 325px;
+  height: 325px;
+  transform: translate3d(0px, -40px, 0px);
 }
 .ink-e .ink-e-js .ink-e-js-item .ink-e-js-item-img {
   width: 73px;
@@ -1071,17 +1090,18 @@ html {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  font-size: 170px;
+  font-size: 118px;
   font-weight: 100;
-  line-height: 180px;
+  line-height: 110px;
 }
 .ink-e .ink-e-js .ink-e-js-item .ink-e-js-item-text {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-  line-height: 40px;
+  line-height: 20px;
   text-align: justify;
-  padding: 0px 25px;
+  padding: 0px 0px;
+  font-size: small;
   margin-bottom: 0;
 }
 .ink-e .ink-e-js .ink-e-js-item .ink-e-js-item-play {

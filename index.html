@@ -22,11 +22,11 @@
     <div class="scroll-indicator__line"></div>
   </div>
 
-  <div class="loader">
+  <!-- <div class="loader">
     <div class="loader-4 center">
       <img class="loader-4-img" width="100%" height="100%" src="icon/LogoJupiter.svg" alt="">
     </div>
-  </div>
+  </div> -->
 
   <main role="main">
 
@@ -163,100 +163,146 @@
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 490">
             <defs>
               <mask id="planet">
-                <circle cx="250" cy="259" r="221" fill="#fff"/>
+                <circle cx="250" cy="259" r="221" fill="#fff" />
               </mask>
               <mask id="depthmap-mask">
-                <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-depthmap-mask.jpg"/>
+                <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-depthmap-mask.jpg" />
               </mask>
               <mask id="deep-depthmap-mask">
-                <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-deep-depthmap-mask.jpg"/>
+                <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-deep-depthmap-mask.jpg" />
               </mask>
               <mask id="highlight-mask">
-                <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-highlight-mask.jpg"/>
+                <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-highlight-mask.jpg" />
               </mask>
               <mask id="shadows-mask">
-                <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-shadows-mask.jpg"/>
+                <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-shadows-mask.jpg" />
               </mask>
               <mask id="atmosphere-mask">
-                <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-atmosphere.jpg"/>
+                <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-atmosphere.jpg" />
               </mask>
-              
+
               <filter id="deepDepthMap">
-                <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="-2 0 0 0 0 0 0 0 2"/>
-                <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" />
-                <feConvolveMatrix order="5 5"
-                  preserveAlpha="true" 
-                  kernelMatrix="-1 0 0 0 0 0 -2 0 0 0 0 0 5 0 0 0 0 0 0 0 0 0 0 0 0"/>
+                <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="-2 0 0 0 0 0 0 0 2" />
+                <feColorMatrix type="matrix"
+                  values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" />
+                <feConvolveMatrix order="5 5" preserveAlpha="true"
+                  kernelMatrix="-1 0 0 0 0 0 -2 0 0 0 0 0 5 0 0 0 0 0 0 0 0 0 0 0 0" />
               </filter>
-              
+
               <filter id="depthMap">
-                <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="0 -1 0 -1 5 -1 0 -1 0"/>
-                <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" />
+                <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="0 -1 0 -1 5 -1 0 -1 0" />
+                <feColorMatrix type="matrix"
+                  values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" />
               </filter>
-              
+
               <filter id="light">
-                <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="0 -1 0 -1 5 -1 0 -1 0"/>
-                <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" />
+                <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="0 -1 0 -1 5 -1 0 -1 0" />
+                <feColorMatrix type="matrix"
+                  values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" />
               </filter>
             </defs>
-            
+
             <g mask="url(#planet)" class="planet">
-              <image width="1490" height="444" class="texture" xlink:href="./icon/jupiter/jupiter-texture--loop.jpg" x="0" y="37"/>
-              
-              <image width="1490" height="444" class="weather" xlink:href="./icon/jupiter/jupiter-weather--loop.jpg" x="0" y="37"/>
-              
+              <image width="1490" height="444" class="texture" xlink:href="./icon/jupiter/jupiter-texture--loop.jpg"
+                x="0" y="37" />
+
+              <image width="1490" height="444" class="weather" xlink:href="./icon/jupiter/jupiter-weather--loop.jpg"
+                x="0" y="37" />
+
               <g mask="url(#shadows-mask)" class="shadows">
-                <image width="1490" height="444" filter="url(#light)" xlink:href="./icon/jupiter/jupiter-texture--loop.jpg" x="0" y="37"/>
+                <image width="1490" height="444" filter="url(#light)"
+                  xlink:href="./icon/jupiter/jupiter-texture--loop.jpg" x="0" y="37" />
               </g>
-             
+
               <g mask="url(#highlight-mask)" class="highlight">
-                <image width="1490" height="444" filter="url(#light)" xlink:href="./icon/jupiter/jupiter-texture--loop.jpg" x="0" y="37"/>
+                <image width="1490" height="444" filter="url(#light)"
+                  xlink:href="./icon/jupiter/jupiter-texture--loop.jpg" x="0" y="37" />
               </g>
-              
+
               <g mask="url(#depthmap-mask)" class="depthmap">
-                <image width="1490" height="444" filter="url(#depthMap)" xlink:href="./icon/jupiter/jupiter-texture--loop.jpg" x="0" y="37"/>
+                <image width="1490" height="444" filter="url(#depthMap)"
+                  xlink:href="./icon/jupiter/jupiter-texture--loop.jpg" x="0" y="37" />
               </g>
-              
+
               <g mask="url(#deep-depthmap-mask)" class="deep-depthmap">
-                <image width="1490" height="444"  filter="url(#deepDepthMap)" xlink:href="./icon/jupiter/jupiter-texture--loop.jpg" x="0" y="37"/>
+                <image width="1490" height="444" filter="url(#deepDepthMap)"
+                  xlink:href="./icon/jupiter/jupiter-texture--loop.jpg" x="0" y="37" />
               </g>
-            </g>
-            
-            <linearGradient id="atmosphere" gradientUnits="userSpaceOnUse" x1="198.04" y1="489.44" x2="301.73" y2="1.63"><stop offset="0" stop-color="#140c02"/>
-              <stop offset=".2" stop-color="#0a0804"/>
-              <stop offset=".88" stop-color="#ffdbb4"/>
-              <stop offset="1" stop-color="#fff"/>
+            </g>        
+            <linearGradient id="atmosphere" gradientUnits="userSpaceOnUse" x1="198.04" y1="489.44" x2="301.73"
+              y2="1.63">
+              <stop offset="0" stop-color="#140c02" />
+              <stop offset=".2" stop-color="#0a0804" />
+              <stop offset=".88" stop-color="#ffdbb4" />
+              <stop offset="1" stop-color="#fff" />
             </linearGradient>
-            
-            <path fill="url(#atmosphere)" mask="url(#atmosphere-mask)" id="jupiter" d="M0 0h500v490H0z"/>
+
+            <path fill="url(#atmosphere)" mask="url(#atmosphere-mask)" id="jupiter" d="M0 0h500v490H0z" />
           </svg>
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <canvas id="myCanvasJupiter"></canvas>
+
+          <div class="optionsContainer">
+            <div id="debug">debug only</div>
+            <button id="playMusic" type="button" value="1">Play</button>
+            <button id="stopMusic" type="button" value="2">Stop</button>
+            
+            <input type="checkbox" id="checkCW" /><span class="option">Clock Wise</span><br/>
+            <input type="checkbox" id="checkSymm" /><span class="option">Symmetry</span><br/>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           <div class="ink-d-js-item-box">
             <p class="ink-d-js-item-box-text">
-              This planet mean  the exploration, a trip to the unknow, an expansion by the spiritual access. Jupiter gives the permission to go beyond the rules, discover other cultures and thinkings. His determination, optimism and spirituality lead him on long journeys. 
+              This planet mean the exploration, a trip to the unknow, an expansion by the spiritual access. Jupiter
+              gives the permission to go beyond the rules, discover other cultures and thinkings. His determination,
+              optimism and spirituality lead him on long journeys.
             </p>
 
-<<<<<<< HEAD
             <h3 class="ink-d-js-item-box-title">Jupiter</h3>
-        </div>
-=======
-          <p class="ink-d-js-item-text">
-            This<br>
-            planet mean <br>
-            the exploration, a trip<br>
-            to the unknow, an expansion by the<br>
-            spiritual access. Jupiter gives the permission to<br>
-            go beyond the rules, discover other cultures and thinkings.<br>
-            His determination, optimism and spirituality lead him on long journeys.<br>
-          </p>
-
-          <h3 class="ink-d-js-item-title">Jupiter</h3>
-          <p class="ink-d-js-item-text">
-            To have more details on the evolution of the planets project, subscribe to the newsletter.
-          </p>
->>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
+          </div>
         </div>
 
-        <a href="#e">+</a>
+        <a class="ink-d-js-link" href="#e">+</a>
       </div>
     </section>
 
@@ -265,88 +311,82 @@
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 490">
           <defs>
             <mask id="planet">
-              <circle cx="250" cy="259" r="221" fill="#fff"/>
+              <circle cx="250" cy="259" r="221" fill="#fff" />
             </mask>
             <mask id="depthmap-mask">
-              <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-depthmap-mask.jpg"/>
+              <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-depthmap-mask.jpg" />
             </mask>
             <mask id="deep-depthmap-mask">
-              <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-deep-depthmap-mask.jpg"/>
+              <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-deep-depthmap-mask.jpg" />
             </mask>
             <mask id="highlight-mask">
-              <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-highlight-mask.jpg"/>
+              <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-highlight-mask.jpg" />
             </mask>
             <mask id="shadows-mask">
-              <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-shadows-mask.jpg"/>
+              <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-shadows-mask.jpg" />
             </mask>
             <mask id="atmosphere-mask">
-              <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-atmosphere.jpg"/>
+              <image width="500" height="490" xlink:href="./icon/jupiter/jupiter-atmosphere.jpg" />
             </mask>
-            
+
             <filter id="deepDepthMap">
-              <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="-2 0 0 0 0 0 0 0 2"/>
-              <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" />
-              <feConvolveMatrix order="5 5"
-                preserveAlpha="true" 
-                kernelMatrix="-1 0 0 0 0 0 -2 0 0 0 0 0 5 0 0 0 0 0 0 0 0 0 0 0 0"/>
+              <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="-2 0 0 0 0 0 0 0 2" />
+              <feColorMatrix type="matrix"
+                values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" />
+              <feConvolveMatrix order="5 5" preserveAlpha="true"
+                kernelMatrix="-1 0 0 0 0 0 -2 0 0 0 0 0 5 0 0 0 0 0 0 0 0 0 0 0 0" />
             </filter>
-            
+
             <filter id="depthMap">
-              <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="0 -1 0 -1 5 -1 0 -1 0"/>
-              <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" />
+              <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="0 -1 0 -1 5 -1 0 -1 0" />
+              <feColorMatrix type="matrix"
+                values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" />
             </filter>
-            
+
             <filter id="light">
-              <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="0 -1 0 -1 5 -1 0 -1 0"/>
-              <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" />
+              <feConvolveMatrix order="3 3" preserveAlpha="true" kernelMatrix="0 -1 0 -1 5 -1 0 -1 0" />
+              <feColorMatrix type="matrix"
+                values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" />
             </filter>
           </defs>
-          
+
           <g mask="url(#planet)" class="planet">
-            <image width="1490" height="444" class="texture" xlink:href="./icon/mars/mars-texture--loop.jpg" x="0" y="37"/>
-            
-<<<<<<< HEAD
-            <image width="1490" height="444" class="weather" xlink:href="./icon/jupiter/jupiter-weather--loop.jpg" x="0" y="37"/>            
-           
-=======
-            <image width="1490" height="444" class="weather" xlink:href="./icon/jupiter/jupiter-weather--loop.jpg" x="0" y="37"/>
-            
-            <g mask="url(#shadows-mask)" class="shadows">
-              <image width="1490" height="444" filter="url(#light)" xlink:href="./icon/mars/mars-texture--loop.jpg" x="0" y="37"/>
-            </g>
-           
-            <g mask="url(#highlight-mask)" class="highlight">
-              <image width="1490" height="444" filter="url(#light)" xlink:href="./icon/mars/mars-texture--loop.jpg" x="0" y="37"/>
-            </g>
-            
->>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
+            <image width="1490" height="444" class="texture" xlink:href="./icon/mars/mars-texture--loop.jpg" x="0"
+              y="37" />
+
+            <image width="1490" height="444" class="weather" xlink:href="./icon/jupiter/jupiter-weather--loop.jpg" x="0"
+              y="37" />
+
             <g mask="url(#depthmap-mask)" class="depthmap">
-              <image width="1490" height="444" filter="url(#depthMap)" xlink:href="./icon/mars/mars-texture--loop.jpg" x="0" y="37"/>
+              <image width="1490" height="444" filter="url(#depthMap)" xlink:href="./icon/mars/mars-texture--loop.jpg"
+                x="0" y="37" />
             </g>
-            
-<<<<<<< HEAD
+
             <g mask="url(#deep-depthmap-mask)" class="deep-depthmap" style="opacity: .3;">
-=======
-            <g mask="url(#deep-depthmap-mask)" class="deep-depthmap">
->>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
-              <image width="1490" height="444"  filter="url(#deepDepthMap)" xlink:href="./icon/mars/mars-texture--loop.jpg" x="0" y="37"/>
+              <image width="1490" height="444" filter="url(#deepDepthMap)"
+                xlink:href="./icon/mars/mars-texture--loop.jpg" x="0" y="37" />
             </g>
           </g>
-          
-          <linearGradient id="atmosphere" gradientUnits="userSpaceOnUse" x1="198.04" y1="489.44" x2="301.73" y2="1.63"><stop offset="0" stop-color="#140c02"/>
-            <stop offset=".2" stop-color="#0a0804"/>
-            <stop offset=".88" stop-color="#ffdbb4"/>
-            <stop offset="1" stop-color="#fff"/>
+
+          <linearGradient id="atmosphere" gradientUnits="userSpaceOnUse" x1="198.04" y1="489.44" x2="301.73" y2="1.63">
+            <stop offset="0" stop-color="#140c02" />
+            <stop offset=".2" stop-color="#0a0804" />
+            <stop offset=".88" stop-color="#ffdbb4" />
+            <stop offset="1" stop-color="#fff" />
           </linearGradient>
-          
-          <path fill="url(#atmosphere)" mask="url(#atmosphere-mask)" id="jupiter" d="M0 0h500v490H0z"/>
+
+          <path fill="url(#atmosphere)" mask="url(#atmosphere-mask)" id="jupiter" d="M0 0h500v490H0z" />
         </svg>
 
         <div class="ink-e-js-item">
           <h3 class="ink-e-js-item-title">MARS</h3>
 
           <p class="ink-e-js-item-text">
-            This planet represents the power of action. Its representative is the god of war "Arès". Blood flows in abundance. In the body as well as on the field. Mars holds the hatred but also the primary side of our survival. If he masters and manages these dark sides, he becomes a source of productive energy. The chosen style is "hard electro music". It starts with violence but will end in the balance and control of it. The fighting spirit, the competition, the leader, the warrior. 
+            This planet represents the power of action. Its representative is the god of war "Arès". Blood flows in
+            abundance. In the body as well as on the field. Mars holds the hatred but also the primary side of our
+            survival. If he masters and manages these dark sides, he becomes a source of productive energy. The chosen
+            style is "hard electro music". It starts with violence but will end in the balance and control of it. The
+            fighting spirit, the competition, the leader, the warrior.
           </p>
 
           <a href="#d">+</a>
@@ -366,7 +406,9 @@
 
   </main>
 
-  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.min.js'></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"></script>

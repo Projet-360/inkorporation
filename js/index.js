@@ -4,6 +4,7 @@ import './c.js'
 import './d.js'
 import './e.js'
 import './f.js'
+import './visualizer.js'
 
 window.onload = function () {
   TweenLite.ticker.fps(30); 

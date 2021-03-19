@@ -1171,7 +1171,7 @@ html {
 .ink-c .ink-c-js .ink-c-js-button {
   position: absolute;
   text-transform: uppercase;
-  bottom: 50px;
+  bottom: 15px;
   text-decoration: none;
   border: 2px solid black;
   padding: 10px;
@@ -1215,6 +1215,14 @@ html {
   color: white;
 }
 
+.ink-d .ink-d-js #myCanvasJupiter {
+  position: absolute;
+  -webkit-transform: translate3d(0px, -26px, 0px) rotate(180deg);
+          transform: translate3d(0px, -26px, 0px) rotate(180deg);
+  width: 350px;
+  height: 350px;
+}
+
 .ink-d .ink-d-js .ink-d-js-text {
   text-align: justify;
   text-align-last: center;
@@ -1222,7 +1230,6 @@ html {
 }
 
 .ink-d .ink-d-js .ink-d-js-item {
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1230,8 +1237,8 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1240,71 +1247,44 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
-  border: 1px solid white;
-  padding: 0px 10px;
+  border: 1px solid #ffce72;
   z-index: 10;
-}
-
-.ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-box {
-  -webkit-transform: translate3d(0px, -10px, 0px);
-          transform: translate3d(0px, -10px, 0px);
-}
-
-.ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-box .ink-d-js-item-box-img {
-=======
-  z-index: 10;
+  width: 310px;
+  height: 90vh;
 }
 
 .ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-img {
->>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
   width: 73px;
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
 
-<<<<<<< HEAD
+.ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-box {
+  padding: 15px;
+  -webkit-transform: translate3d(0px, -30px, 0px);
+          transform: translate3d(0px, -30px, 0px);
+}
+
 .ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-box .ink-d-js-item-box-title {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  font-size: 90px;
+  font-size: 74px;
   font-weight: 100;
-  line-height: 70px;
-}
-
-.ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-box .ink-d-js-item-box-text {
-  width: 264px;
-=======
-.ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-title {
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0;
-  font-size: 160px;
-  font-weight: 100;
-  line-height: 110px;
-}
-
-.ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-text {
-  width: 800px;
->>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-top: 0;
-<<<<<<< HEAD
-  line-height: 35px;
-  font-size: small;
-}
-
-.ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-box .ink-d-js-item-box-play {
-=======
   line-height: 40px;
 }
 
+.ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-box .ink-d-js-item-box-text {
+  width: 262px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  line-height: 30px;
+  font-size: smaller;
+}
+
 .ink-d .ink-d-js .ink-d-js-item .ink-d-js-item-play {
->>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
   width: 40px;
   display: block;
   margin-right: auto;
@@ -1312,12 +1292,23 @@ html {
   cursor: pointer;
 }
 
+.ink-d .ink-d-js .ink-d-js-link {
+  font-size: 35px;
+  position: absolute;
+  -webkit-transform: translate3d(90px, -100px, 0px);
+          transform: translate3d(90px, -100px, 0px);
+  border: 2px solid #ffce72;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  z-index: 100;
+}
+
 .ink-d .ink-d-js svg {
-<<<<<<< HEAD
-  height: 40vh;
-=======
   height: 30vh;
->>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
   /* position: absolute; */
   /* top: 0; */
   margin-left: auto;
@@ -1415,17 +1406,13 @@ html {
   z-index: 5;
   color: white;
   font-family: "Raleway", sans-serif;
-<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-=======
->>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -1436,8 +1423,6 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
->>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
 }
 
 .ink-e .ink-e-js .ink-e-js-text {
@@ -1447,18 +1432,13 @@ html {
 }
 
 .ink-e .ink-e-js .ink-e-js-item {
-  border: 1px solid white;
+  border: 1px solid #db1d1d;
   padding: 20px;
   z-index: 10;
-<<<<<<< HEAD
   width: 325px;
   height: 325px;
   -webkit-transform: translate3d(0px, -40px, 0px);
           transform: translate3d(0px, -40px, 0px);
-=======
-  width: 500px;
-  height: 500px;
->>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
 }
 
 .ink-e .ink-e-js .ink-e-js-item .ink-e-js-item-img {
@@ -1472,31 +1452,19 @@ html {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-<<<<<<< HEAD
   font-size: 118px;
   font-weight: 100;
   line-height: 110px;
-=======
-  font-size: 170px;
-  font-weight: 100;
-  line-height: 180px;
->>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
 }
 
 .ink-e .ink-e-js .ink-e-js-item .ink-e-js-item-text {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
-<<<<<<< HEAD
   line-height: 20px;
   text-align: justify;
   padding: 0px 0px;
   font-size: small;
-=======
-  line-height: 40px;
-  text-align: justify;
-  padding: 0px 25px;
->>>>>>> 69e7ba91c178c31c5587c0b09e02b1dc404f8c0b
   margin-bottom: 0;
 }
 
