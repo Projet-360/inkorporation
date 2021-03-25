@@ -1504,14 +1504,14 @@ html {
 }
 
 .ink-d .ink-d-js .planet image {
-  -webkit-animation: rotation 70s linear infinite;
-          animation: rotation 70s linear infinite;
+  -webkit-animation: rotation 100s linear infinite;
+          animation: rotation 100s linear infinite;
   opacity: .9;
 }
 
 .ink-d .ink-d-js .planet .weather {
-  -webkit-animation: rotation 70s linear infinite;
-          animation: rotation 70s linear infinite;
+  -webkit-animation: rotation 100s linear infinite;
+          animation: rotation 100s linear infinite;
   opacity: .5;
 }
 
@@ -1638,7 +1638,7 @@ html {
 }
 
 .ink-e .ink-e-js svg {
-  height: 100vh;
+  height: 300px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -1671,13 +1671,13 @@ html {
 }
 
 .ink-e .ink-e-js .planet image {
-  -webkit-animation: rotation 20s linear infinite;
-          animation: rotation 20s linear infinite;
+  -webkit-animation: rotation 90s linear infinite;
+          animation: rotation 90s linear infinite;
 }
 
 .ink-e .ink-e-js .planet .weather {
-  -webkit-animation: rotation 20s linear infinite;
-          animation: rotation 20s linear infinite;
+  -webkit-animation: rotation 90s linear infinite;
+          animation: rotation 90s linear infinite;
 }
 
 @keyframes rotation {

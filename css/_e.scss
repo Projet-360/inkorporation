@@ -67,7 +67,7 @@
 
 
     svg {
-      height: 100vh;
+      height: 300px;
       margin-bottom: 20px;
       margin-left: auto;
       margin-right: auto;
@@ -98,11 +98,11 @@
       transform-origin: 50% 50%;
 
       image {
-        animation: rotation 20s linear infinite
+        animation: rotation 90s linear infinite
       }
 
       .weather {
-        animation: rotation 20s linear infinite
+        animation: rotation 90s linear infinite
       }
     }
 

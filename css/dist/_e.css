@@ -20,7 +20,7 @@
   margin-bottom: 0;
 }
 .ink-e .ink-e-js .ink-e-js-item {
-  border: 1px solid white;
+  border: 1px solid #db1d1d;
   padding: 20px;
   z-index: 10;
   width: 325px;
@@ -59,9 +59,7 @@
   cursor: pointer;
 }
 .ink-e .ink-e-js svg {
-  height: 27vh;
-  /* position: absolute; */
-  /* top: 0; */
+  height: 300px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -86,10 +84,10 @@
   transform-origin: 50% 50%;
 }
 .ink-e .ink-e-js .planet image {
-  animation: rotation 200s linear infinite;
+  animation: rotation 20s linear infinite;
 }
 .ink-e .ink-e-js .planet .weather {
-  animation: rotation 100s linear infinite;
+  animation: rotation 20s linear infinite;
 }
 @keyframes rotation {
   0% {
