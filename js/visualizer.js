@@ -15,7 +15,7 @@ var FFTSIZE = 128;
 var audio = {
   buffer: {},
   compatibility: {},
-  file: "https://s.cdpn.io/1715/the_xx_-_intro.mp3",
+  file: "./../icon/jupiter.mp3",
   proceed: true,
   playing: false,
   source: {}
@@ -30,16 +30,10 @@ try {
   audio.context = new window.AudioContext();
   audio.analyser = audio.context.createAnalyser();
   audio.analyser.fftSize = FFTSIZE;
-  document.getElementById('debug').style.display = "block";
-  document.getElementById('debug').innerHTML = "Note: It may take a while to load the mp3...";
   document.getElementById('playMusic').style.display = "block";
 } catch(e) {
   audio.proceed = false;
   document.getElementById('playMusic').style.display = "none";
-  document.getElementById('debug').style.display = "block";
-  document.getElementById('debug').style.color = "orange";
-  document.getElementById('debug').style.fontWeight = "bold";
-  document.getElementById('debug').innerHTML = 'Web Audio API not supported in this browser.';
   alert('Web Audio API not supported in this browser.');
 }
 
@@ -107,20 +101,20 @@ audio.stop = function() {
   audio.source._startTime = audio.source.currentTime;
 };
 
-var playButton = document.getElementById('playMusic');
-playButton.addEventListener('click', function(e) {
-  stopButton.style.display = "block";
-  playButton.style.display = "none";
-  e.preventDefault();
-  audio.play();
-});
 
-var stopButton = document.getElementById('stopMusic');
-stopButton.addEventListener('click', function(e) {
-  stopButton.style.display = "none";
-  playButton.style.display = "block";
-  e.preventDefault();
-  audio.stop();
+
+
+
+
+
+
+
+const button = document.getElementById('playMusic');
+button.addEventListener('click', function(e) {
+  return ( button.classList.contains('active')  ? 
+  audio.play() : 
+  audio.stop()
+  );
 });
 
 

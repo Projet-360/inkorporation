@@ -18,7 +18,7 @@
 
 <body class="body-ink">
   <!-- <div class="twinkling"></div> -->
-  <div class="stars"></div>
+  <div class="twinkling"></div>
   <div class="scroll-indicator">
     <div class="scroll-indicator__line"></div>
   </div>
@@ -263,15 +263,19 @@
           <canvas id="myCanvasJupiter"></canvas>
 
           <div class="optionsContainer">
-            <div id="debug">debug only</div>
-            <button id="playMusic" type="button" value="1">Play</button>
-            <button id="stopMusic" type="button" value="2">Stop</button>
-            
-            <input type="checkbox" id="checkCW" /><span class="option">Clock Wise</span><br/>
-            <input type="checkbox" id="checkSymm" /><span class="option">Symmetry</span><br/>
+
+            <bouton id="playMusic" type="button" value="1" class="botón" onclick="this.classList.toggle('active'), this.value=2" >
+              <div class="icono" width="200" height="200">
+                <div class="parte izquierda" x="0" y="0" width="200" height="200" fill="#fff"></div>
+                <div class="parte derecha" x="0" y="0" width="200" height="200" fill="#fff"></div>
+              </div>
+              <div class="puntero"></div>
+            </bouton>
+
           </div>
 
-
+          <a class="ink-d-js-link" href="#e">+</a>
+          <a class="ink-d-js-linksecond" href="#e">more from Jupiter</a>
 
 
 
@@ -293,17 +297,16 @@
 
 
           <div class="ink-d-js-item-box">
+            <h3 class="ink-d-js-item-box-title">Jupiter</h3>
             <p class="ink-d-js-item-box-text">
               This planet mean the exploration, a trip to the unknow, an expansion by the spiritual access. Jupiter
               gives the permission to go beyond the rules, discover other cultures and thinkings. His determination,
               optimism and spirituality lead him on long journeys.
             </p>
-
-            <h3 class="ink-d-js-item-box-title">Jupiter</h3>
           </div>
         </div>
 
-        <a class="ink-d-js-link" href="#e">+</a>
+
       </div>
     </section>
 
@@ -355,7 +358,7 @@
             <image width="1490" height="444" class="texture" xlink:href="./icon/mars/mars-texture--loop.jpg" x="0"
               y="37" />
 
-            <image width="1490" height="444" class="weather" xlink:href="./icon/jupiter/jupiter-weather--loop.jpg" x="0"
+            <image width="1490" height="444" class="weather" xlink:href="./icon/mars/mars-weather--loop.jpg" x="0"
               y="37" />
 
             <g mask="url(#depthmap-mask)" class="depthmap">

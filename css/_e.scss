@@ -63,13 +63,11 @@
         margin-left: auto;
         cursor: pointer;
       }
-    }
+    } 
 
 
     svg {
-      height: 27vh;
-      /* position: absolute; */
-      /* top: 0; */
+      height: 100vh;
       margin-bottom: 20px;
       margin-left: auto;
       margin-right: auto;
@@ -100,11 +98,11 @@
       transform-origin: 50% 50%;
 
       image {
-        animation: rotation 200s linear infinite
+        animation: rotation 20s linear infinite
       }
 
       .weather {
-        animation: rotation 100s linear infinite
+        animation: rotation 20s linear infinite
       }
     }
 
