@@ -19,7 +19,7 @@ bTM.add([
     ease: Linear.easeNone,
     force3D: false
   }),
-  TweenMax.set('.body-ink', {
+  TweenMax.set('.main-ink', {
     opacity: 1,
   })
 
