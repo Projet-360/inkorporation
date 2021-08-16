@@ -416,8 +416,8 @@ body::-webkit-scrollbar-thumb {
 
 .main-ink .stars .twinkling {
   opacity: 1;
-  -webkit-transition: all 1s ease 1s;
-  transition: all 1s ease 1s;
+  -webkit-transition: all 3s ease 1s;
+  transition: all 3s ease 1s;
 }
 
 .main-ink.b {
@@ -425,6 +425,17 @@ body::-webkit-scrollbar-thumb {
   -webkit-transition: background-color .3s ease;
   transition: background-color .3s ease;
   background: none;
+}
+
+.main-ink.b .stars {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.main-ink.b .stars .stars-background {
+  opacity: 0;
+  -webkit-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
 }
 
 .main-ink.b .stars .twinkling {
@@ -437,6 +448,23 @@ body::-webkit-scrollbar-thumb {
   background-color: #d8d8d8 !important;
   -webkit-transition: background-color 1s ease;
   transition: background-color 1s ease;
+}
+
+.main-ink.c .stars {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.main-ink.c .stars .stars-background {
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.main-ink.c .stars .twinkling {
+  opacity: 0;
+  -webkit-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
 }
 
 .main-ink.d {
@@ -467,7 +495,7 @@ body::-webkit-scrollbar-thumb {
 
 .stars .stars-background {
   background: url("../icon/stars.png") repeat top center;
-  background-size: contain;
+  background-size: 1500px;
   z-index: 0;
   position: absolute;
   top: 0;
@@ -495,6 +523,128 @@ body::-webkit-scrollbar-thumb {
   z-index: 1;
   -webkit-animation: move-twink-back 500s linear infinite;
   animation: move-twink-back 500s linear infinite;
+}
+
+@-webkit-keyframes grain {
+  0%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  10% {
+    -webkit-transform: translate(-5%, -10%);
+            transform: translate(-5%, -10%);
+  }
+  20% {
+    -webkit-transform: translate(-15%, 5%);
+            transform: translate(-15%, 5%);
+  }
+  30% {
+    -webkit-transform: translate(7%, -25%);
+            transform: translate(7%, -25%);
+  }
+  40% {
+    -webkit-transform: translate(-5%, 25%);
+            transform: translate(-5%, 25%);
+  }
+  50% {
+    -webkit-transform: translate(-15%, 10%);
+            transform: translate(-15%, 10%);
+  }
+  60% {
+    -webkit-transform: translate(15%, 0%);
+            transform: translate(15%, 0%);
+  }
+  70% {
+    -webkit-transform: translate(0%, 15%);
+            transform: translate(0%, 15%);
+  }
+  80% {
+    -webkit-transform: translate(3%, 35%);
+            transform: translate(3%, 35%);
+  }
+  90% {
+    -webkit-transform: translate(-10%, 10%);
+            transform: translate(-10%, 10%);
+  }
+}
+
+@keyframes grain {
+  0%, 100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  10% {
+    -webkit-transform: translate(-5%, -10%);
+            transform: translate(-5%, -10%);
+  }
+  20% {
+    -webkit-transform: translate(-15%, 5%);
+            transform: translate(-15%, 5%);
+  }
+  30% {
+    -webkit-transform: translate(7%, -25%);
+            transform: translate(7%, -25%);
+  }
+  40% {
+    -webkit-transform: translate(-5%, 25%);
+            transform: translate(-5%, 25%);
+  }
+  50% {
+    -webkit-transform: translate(-15%, 10%);
+            transform: translate(-15%, 10%);
+  }
+  60% {
+    -webkit-transform: translate(15%, 0%);
+            transform: translate(15%, 0%);
+  }
+  70% {
+    -webkit-transform: translate(0%, 15%);
+            transform: translate(0%, 15%);
+  }
+  80% {
+    -webkit-transform: translate(3%, 35%);
+            transform: translate(3%, 35%);
+  }
+  90% {
+    -webkit-transform: translate(-10%, 10%);
+            transform: translate(-10%, 10%);
+  }
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-stars-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 5000px 0px;
+  }
+}
+
+@-webkit-keyframes move-stars-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 5000px 0px;
+  }
 }
 
 .ink-navigation-list-item-button {
@@ -1107,8 +1257,8 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   position: absolute;
   z-index: 20;
-  -webkit-transform: translateY(160px);
-          transform: translateY(160px);
+  -webkit-transform: translateY(-160px);
+          transform: translateY(-160px);
 }
 
 .ink-a .ink-a-js .ink-a-js-sell .ink-a-js-sell-texte-bouton {
@@ -1133,7 +1283,7 @@ body::-webkit-scrollbar-thumb {
   background-color: unset;
   padding: 10px 20px;
   position: relative;
-  margin: 0px 80px;
+  margin: 10px 115px;
   font-weight: 500;
   width: 250px;
   height: 51px;
@@ -1176,13 +1326,13 @@ body::-webkit-scrollbar-thumb {
           align-items: center;
   width: 250px;
   height: 51px;
-  margin-top: 20px;
-  font-family: 'Open Sans', sans-serif;
+  margin-top: 22px;
+  font-family: 'Raleway', sans-serif;
   position: absolute;
   text-transform: uppercase;
   color: #67aeff;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 300;
   text-decoration: none;
   display: block;
   -webkit-transition: all .5s ease;
@@ -1316,13 +1466,12 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none;
   font-family: "Raleway";
   color: white;
-  border: 2px solid white;
-  border-radius: 50%;
+  border: 1px solid white;
   padding: 10px;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  -webkit-transform: translate(0vw, 160px) rotate(0deg);
-          transform: translate(0vw, 160px) rotate(0deg);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-transform: translate(0vw, 200px) rotate(0deg);
+          transform: translate(0vw, 200px) rotate(0deg);
   font-weight: 400;
   letter-spacing: 2px;
   text-align: center;
@@ -1334,13 +1483,46 @@ body::-webkit-scrollbar-thumb {
   border-color: #67aeff;
 }
 
+.ink-a .ink-a-js-enter .ink-a-js-enter-span {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  position: absolute;
+  content: "enter";
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #00c8ff;
+  background-image: -webkit-linear-gradient(92deg, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 20s infinite linear;
+  border-color: #67aeff;
+}
+
 .ink-a .ink-a-js-enter:hover {
-  -webkit-transform: translate(0vw, 160px) rotate(90deg);
-          transform: translate(0vw, 160px) rotate(90deg);
-  font-size: 50px;
+  font-size: 30px;
+  -webkit-transform: translate(0vw, 200px) rotate(45deg);
+          transform: translate(0vw, 200px) rotate(45deg);
   border-color: #67aeff;
   color: #67aeff;
   background-image: -webkit-linear-gradient(92deg, #031cbf, #00d0ff);
+}
+
+.ink-a .ink-a-js-enter:hover .ink-a-js-enter-span {
+  font-size: 30px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  background-image: -webkit-linear-gradient(92deg, #031cbf, #00d0ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 20s infinite linear;
+  border-color: #67aeff;
+}
+
+.ink-a .ink-a-js-enter:hover .ink-a-js-enter-span.two {
+  -webkit-transform: rotate(0deg) !important;
+          transform: rotate(0deg) !important;
 }
 
 .ink-a svg {
@@ -1394,9 +1576,8 @@ body::-webkit-scrollbar-thumb {
   width: 300px;
   border: 5px solid white;
   padding: 10px;
-  margin-top: -25px;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
 }
 
 .ink-b .ink-b-js .ink-b-js-text h2 {
@@ -1424,7 +1605,7 @@ body::-webkit-scrollbar-thumb {
 
 .ink-b .ink-b-js .ink-b-js-text p {
   font-family: "handwrite";
-  font-size: 28px;
+  font-size: 50px;
   color: #fff;
   text-align: justify;
   -webkit-transition: all 1s ease;
@@ -2105,7 +2286,11 @@ html {
 
 @font-face {
   font-family: handwrite;
-  src: url("police/Darkwoman.otf") format("opentype");
+  src: url("police/Free Pen.otf") format("opentype");
+}
+
+body {
+  margin: 0;
 }
 
 main {
@@ -2129,10 +2314,6 @@ main {
   overflow: hidden;
   position: absolute;
   z-index: 10;
-}
-
-body {
-  margin: 0;
 }
 
 /*  BALISE SECTION PREMIER CONTENANT */
@@ -2219,44 +2400,4 @@ body {
 }
 
 /* FIN INDICATEUR DU SCROLL EN HAUT DE L'ECRAN */
-/* ============================================================================================== 
-SED Innovations
-https://sed.am
-https://mkrtchyan.ga
-================================================================================================= */
-@keyframes move-twink-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
-}
-
-@-webkit-keyframes move-twink-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -10000px 5000px;
-  }
-}
-
-@keyframes move-stars-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 5000px 0px;
-  }
-}
-
-@-webkit-keyframes move-stars-back {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 5000px 0px;
-  }
-}
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,7 @@
 @import 
 '_scroll-bar.scss',
 '_navigation.scss',
-'_bodyColors.scss',
+'_mainColors.scss',
 '_button.scss',
 '_loader.scss',
 '_menu.scss',
@@ -25,9 +25,12 @@ html {
 
 @font-face {
   font-family: handwrite;
-  src: url("police/Darkwoman.otf") format("opentype");
+  src: url("police/Free Pen.otf") format("opentype");
 }
 
+body {
+  margin: 0;
+}
 
 main {
   display: -ms-flexbox;
@@ -43,9 +46,7 @@ main {
   z-index: 10;
 }
 
-body {
-  margin: 0;
-}
+
 
 /*  BALISE SECTION PREMIER CONTENANT */
 .ink-a,
@@ -67,7 +68,6 @@ body {
   align-items: center;
   scroll-snap-align: start;
 }
-
 /*  FIN BALISE SECTION PREMIER CONTENANT */
 
 /*  GSAP ACTIF DEUXIEME CONTENANT */
@@ -87,7 +87,6 @@ body {
   align-content: stretch;
   align-items: center;
 }
-
 /*  FIN GSAP ACTIF DEUXIEME CONTENANT */
 
 
@@ -112,7 +111,6 @@ body {
     border-bottom-right-radius: 5px;
   }
 }
-
 /* FIN INDICATEUR DU SCROLL EN HAUT DE L'ECRAN */
 
 
@@ -122,45 +120,6 @@ body {
 
 
 
-        /* ============================================================================================== 
-SED Innovations
-https://sed.am
-https://mkrtchyan.ga
-================================================================================================= */
-@keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
-}
-@-webkit-keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
-}
-@-moz-keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
-}
-@-ms-keyframes move-twink-back {
-  from {background-position:0 0;}
-  to {background-position:-10000px 5000px;}
-}
-
-
-@keyframes move-stars-back {
-  from {background-position:0 0;}
-  to {background-position:5000px 0px ;}
-}
-@-webkit-keyframes move-stars-back {
-  from {background-position:0 0;}
-  to {background-position:5000px 0px ;}
-}
-@-moz-keyframes move-stars-back {
-  from {background-position:0 0;}
-  to {background-position:5000px 0px ;}
-}
-@-ms-keyframes move-stars-back {
-  from {background-position:0 0;}
-  to {background-position:5000px 0px ;}
-}
 
 
 

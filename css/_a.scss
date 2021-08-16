@@ -74,7 +74,7 @@
         .ink-a-js-img {
             width: 360px;
             z-index: 10;
-            position: absolute;
+            position: absolute;            
         }
 
         .ink-a-js-sell {
@@ -88,7 +88,7 @@
 
             position: absolute;
             z-index: 20;
-            transform: translateY(160px);
+            transform: translateY(-160px);
 
             .ink-a-js-sell-texte-bouton {
                 display: flex;
@@ -102,7 +102,7 @@
                 background-color: unset;
                 padding: 10px 20px;
                 position: relative;
-                margin: 0px 80px;
+                margin: 10px 115px;
 
                 font-weight: 500;
                 width: 250px;
@@ -113,14 +113,14 @@
 
                 &:before {
                     content: "";
-                    background: linear-gradient(to left, #67aeff, #153aa0); 
+                    background: linear-gradient(to left, #67aeff, #153aa0);
                     width: 0px;
                     height: 48px;
                     position: absolute;
                     left: 0;
                     top: 0;
                     transition: all .5s ease;
-                    z-index: 0;                    
+                    z-index: 0;
                 }
 
                 .ink-a-js-sell-texte-bouton-href {
@@ -133,14 +133,14 @@
 
                     width: 250px;
                     height: 51px;
-                    margin-top: 20px;
+                    margin-top: 22px;
 
-                    font-family: 'Open Sans', sans-serif;
+                    font-family: 'Raleway', sans-serif;
                     position: absolute;
                     text-transform: uppercase;
                     color: #67aeff;
                     font-size: 20px;
-                    font-weight: 100;
+                    font-weight: 300;
                     text-decoration: none;
                     display: block;
                     transition: all .5s ease;
@@ -149,7 +149,7 @@
                 }
 
                 &:hover {
-                    &::before {                       
+                    &::before {
                         width: 248px;
                     }
 
@@ -227,8 +227,7 @@
             }
         }
 
-        @media screen and (min-width: 760px) {
-            }
+        @media screen and (min-width: 760px) {}
     }
 
     .ink-a-js-enter {
@@ -248,11 +247,10 @@
         text-decoration: none;
         font-family: "Raleway";
         color: white;
-        border: 2px solid white;
-        border-radius: 50%;
+        border: 1px solid white;
         padding: 10px;
-        transition: all 1s ease;
-        transform: translate(0vw, 160px) rotate(0deg);
+        transition: all .5s ease;
+        transform: translate(0vw, 200px) rotate(0deg);
 
         font-weight: 400;
         letter-spacing: 2px;
@@ -264,12 +262,42 @@
         -webkit-animation: hue 20s infinite linear;
         border-color: #67aeff;
 
+        .ink-a-js-enter-span {
+            transition: all .5s ease;
+            position: absolute;
+            content: "enter";
+            font-weight: 400;
+            font-size: 20px;
+            letter-spacing: 2px;
+            text-align: center;
+            color: #00c8ff;
+            background-image: -webkit-linear-gradient(92deg, #ffffff, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: hue 20s infinite linear;
+            border-color: #67aeff;
+        }
+
         &:hover {
-            transform: translate(0vw, 160px) rotate(90deg);
-            font-size: 50px;
+            font-size: 30px;
+            transform: translate(0vw, 200px) rotate(45deg);
             border-color: #67aeff;
             color: #67aeff;
             background-image: -webkit-linear-gradient(92deg, #031cbf, #00d0ff);
+
+            .ink-a-js-enter-span {
+                font-size: 30px;
+                transform: rotate(-90deg);
+                background-image: -webkit-linear-gradient(92deg, #031cbf, #00d0ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -webkit-animation: hue 20s infinite linear;
+                border-color: #67aeff;
+
+                &.two {
+                    transform: rotate(0deg) !important;
+                }
+            }
         }
     }
 
@@ -290,6 +318,7 @@
     .date {
         fill: url("#date-gradient");
         transition: all 2s ease;
+
         stop {
             -webkit-transition: 2s ease;
             transition: 2s ease;
@@ -301,9 +330,11 @@
     from {
         -webkit-filter: hue-rotate(-30deg);
     }
+
     50% {
         -webkit-filter: hue-rotate(30deg);
     }
+
     to {
         -webkit-filter: hue-rotate(-30deg);
     }
