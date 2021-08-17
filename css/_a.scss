@@ -72,7 +72,7 @@
         }
 
         .ink-a-js-img {
-            width: 360px;
+            width: 330px;
             z-index: 10;
             position: absolute;            
         }
@@ -88,7 +88,7 @@
 
             position: absolute;
             z-index: 20;
-            transform: translateY(-160px);
+            transform: translateY(-280px);
 
             .ink-a-js-sell-texte-bouton {
                 display: flex;
@@ -250,7 +250,7 @@
         border: 1px solid white;
         padding: 10px;
         transition: all .5s ease;
-        transform: translate(0vw, 200px) rotate(0deg);
+        transform: translate(0vw, 180px) rotate(0deg);
 
         font-weight: 400;
         letter-spacing: 2px;
@@ -280,7 +280,7 @@
 
         &:hover {
             font-size: 30px;
-            transform: translate(0vw, 200px) rotate(45deg);
+            transform: translate(0vw, 180px) rotate(45deg);
             border-color: #67aeff;
             color: #67aeff;
             background-image: -webkit-linear-gradient(92deg, #031cbf, #00d0ff);

@@ -525,90 +525,14 @@ body::-webkit-scrollbar-thumb {
   animation: move-twink-back 500s linear infinite;
 }
 
-@-webkit-keyframes grain {
-  0%, 100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  10% {
-    -webkit-transform: translate(-5%, -10%);
-            transform: translate(-5%, -10%);
-  }
-  20% {
-    -webkit-transform: translate(-15%, 5%);
-            transform: translate(-15%, 5%);
-  }
-  30% {
-    -webkit-transform: translate(7%, -25%);
-            transform: translate(7%, -25%);
-  }
-  40% {
-    -webkit-transform: translate(-5%, 25%);
-            transform: translate(-5%, 25%);
-  }
-  50% {
-    -webkit-transform: translate(-15%, 10%);
-            transform: translate(-15%, 10%);
-  }
-  60% {
-    -webkit-transform: translate(15%, 0%);
-            transform: translate(15%, 0%);
-  }
-  70% {
-    -webkit-transform: translate(0%, 15%);
-            transform: translate(0%, 15%);
-  }
-  80% {
-    -webkit-transform: translate(3%, 35%);
-            transform: translate(3%, 35%);
-  }
-  90% {
-    -webkit-transform: translate(-10%, 10%);
-            transform: translate(-10%, 10%);
-  }
-}
-
-@keyframes grain {
-  0%, 100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  10% {
-    -webkit-transform: translate(-5%, -10%);
-            transform: translate(-5%, -10%);
-  }
-  20% {
-    -webkit-transform: translate(-15%, 5%);
-            transform: translate(-15%, 5%);
-  }
-  30% {
-    -webkit-transform: translate(7%, -25%);
-            transform: translate(7%, -25%);
-  }
-  40% {
-    -webkit-transform: translate(-5%, 25%);
-            transform: translate(-5%, 25%);
-  }
-  50% {
-    -webkit-transform: translate(-15%, 10%);
-            transform: translate(-15%, 10%);
-  }
-  60% {
-    -webkit-transform: translate(15%, 0%);
-            transform: translate(15%, 0%);
-  }
-  70% {
-    -webkit-transform: translate(0%, 15%);
-            transform: translate(0%, 15%);
-  }
-  80% {
-    -webkit-transform: translate(3%, 35%);
-            transform: translate(3%, 35%);
-  }
-  90% {
-    -webkit-transform: translate(-10%, 10%);
-            transform: translate(-10%, 10%);
-  }
+.stars #grained {
+  width: 100vw;
+  height: 100vh;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: .4;
 }
 
 @keyframes move-twink-back {
@@ -1231,7 +1155,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .ink-a .ink-a-js .ink-a-js-img {
-  width: 360px;
+  width: 330px;
   z-index: 10;
   position: absolute;
 }
@@ -1257,8 +1181,8 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   position: absolute;
   z-index: 20;
-  -webkit-transform: translateY(-160px);
-          transform: translateY(-160px);
+  -webkit-transform: translateY(-280px);
+          transform: translateY(-280px);
 }
 
 .ink-a .ink-a-js .ink-a-js-sell .ink-a-js-sell-texte-bouton {
@@ -1470,8 +1394,8 @@ body::-webkit-scrollbar-thumb {
   padding: 10px;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
-  -webkit-transform: translate(0vw, 200px) rotate(0deg);
-          transform: translate(0vw, 200px) rotate(0deg);
+  -webkit-transform: translate(0vw, 180px) rotate(0deg);
+          transform: translate(0vw, 180px) rotate(0deg);
   font-weight: 400;
   letter-spacing: 2px;
   text-align: center;
@@ -1502,8 +1426,8 @@ body::-webkit-scrollbar-thumb {
 
 .ink-a .ink-a-js-enter:hover {
   font-size: 30px;
-  -webkit-transform: translate(0vw, 200px) rotate(45deg);
-          transform: translate(0vw, 200px) rotate(45deg);
+  -webkit-transform: translate(0vw, 180px) rotate(45deg);
+          transform: translate(0vw, 180px) rotate(45deg);
   border-color: #67aeff;
   color: #67aeff;
   background-image: -webkit-linear-gradient(92deg, #031cbf, #00d0ff);
@@ -1573,17 +1497,17 @@ body::-webkit-scrollbar-thumb {
 
 .ink-b .ink-b-js .ink-b-js-text {
   position: absolute;
-  width: 300px;
+  width: 250px;
   border: 5px solid white;
   padding: 10px;
-  -webkit-transform: translateY(-30px);
-          transform: translateY(-30px);
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
 }
 
 .ink-b .ink-b-js .ink-b-js-text h2 {
   text-transform: uppercase;
   font-family: "Raleway";
-  font-size: 50px;
+  font-size: 35px;
   color: white;
   font-weight: normal !important;
   border-bottom: 1px solid white;
@@ -1599,13 +1523,13 @@ body::-webkit-scrollbar-thumb {
   font-weight: 900;
   font-size: 22px;
   right: -22%;
-  top: 4.1%;
+  top: 5.3%;
   letter-spacing: 3px;
 }
 
 .ink-b .ink-b-js .ink-b-js-text p {
   font-family: "handwrite";
-  font-size: 50px;
+  font-size: 39px;
   color: #fff;
   text-align: justify;
   -webkit-transition: all 1s ease;

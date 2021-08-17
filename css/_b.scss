@@ -5,15 +5,15 @@
 
         .ink-b-js-text {
             position: absolute;
-            width: 300px;
+            width: 250px;
             border: 5px solid white;
             padding: 10px;
-            transform: translateY(-30px);
+            transform: translateY(15px);
             
             h2 {
                 text-transform: uppercase;
                 font-family: "Raleway";
-                font-size: 50px;
+                font-size: 35px;
                 color: white;
                 font-weight: normal !important;
                 border-bottom: 1px solid white;
@@ -27,14 +27,14 @@
                     font-weight: 900;
                     font-size: 22px;
                     right: -22%;
-                    top: 4.1%;
+                    top: 5.3%;
                     letter-spacing: 3px;
                 }
             }
     
             p {
                 font-family: "handwrite";
-                font-size: 50px;
+                font-size: 39px;
                 color: #fff;
                 text-align: justify;
                 transition: all 1s ease;
