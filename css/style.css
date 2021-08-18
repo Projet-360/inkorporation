@@ -444,6 +444,12 @@ body::-webkit-scrollbar-thumb {
   transition: all 0s ease 0s;
 }
 
+.main-ink.b .stars #grained {
+  opacity: 0;
+  -webkit-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
+}
+
 .main-ink.c {
   background-color: #d8d8d8 !important;
   -webkit-transition: background-color 1s ease;
@@ -475,6 +481,16 @@ body::-webkit-scrollbar-thumb {
 
 .main-ink.d .stars {
   opacity: 1;
+}
+
+.main-ink.d #grained {
+  opacity: .3 !important;
+}
+
+.main-ink.d .twinkling {
+  opacity: 1 !important;
+  -webkit-transition: all 1s ease 1s !important;
+  transition: all 1s ease 1s !important;
 }
 
 .main-ink.e {
@@ -532,7 +548,11 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   left: 0;
   z-index: 10;
-  opacity: .4;
+  opacity: .3;
+  -webkit-filter: sepia(1);
+          filter: sepia(1);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 @keyframes move-twink-back {
@@ -1154,6 +1174,12 @@ body::-webkit-scrollbar-thumb {
   height: 100px;
 }
 
+@media screen and (max-width: 959px) {
+  .ink-a .ink-a-js .ink-a-js-up {
+    display: none;
+  }
+}
+
 .ink-a .ink-a-js .ink-a-js-img {
   width: 330px;
   z-index: 10;
@@ -1181,8 +1207,8 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   position: absolute;
   z-index: 20;
-  -webkit-transform: translateY(-280px);
-          transform: translateY(-280px);
+  -webkit-transform: translateY(-172px);
+          transform: translateY(-172px);
 }
 
 .ink-a .ink-a-js .ink-a-js-sell .ink-a-js-sell-texte-bouton {
@@ -1273,7 +1299,7 @@ body::-webkit-scrollbar-thumb {
   color: white;
   -webkit-filter: drop-shadow(5px 5px 4px #000000);
           filter: drop-shadow(5px 5px 4px #000000);
-  letter-spacing: 8px;
+  letter-spacing: 3px;
 }
 
 .ink-a .ink-a-js .ink-a-js-link {
@@ -1500,8 +1526,8 @@ body::-webkit-scrollbar-thumb {
   width: 250px;
   border: 5px solid white;
   padding: 10px;
-  -webkit-transform: translateY(15px);
-          transform: translateY(15px);
+  -webkit-transform: translateY(-18px);
+          transform: translateY(-18px);
 }
 
 .ink-b .ink-b-js .ink-b-js-text h2 {
@@ -1522,8 +1548,8 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
   font-weight: 900;
   font-size: 22px;
-  right: -22%;
-  top: 5.3%;
+  right: -70px;
+  top: 24px;
   letter-spacing: 3px;
 }
 
@@ -1537,7 +1563,7 @@ body::-webkit-scrollbar-thumb {
   z-index: 10;
   margin: 0;
   padding: 5px;
-  line-height: 40px;
+  line-height: 50px;
   margin-bottom: 35px;
 }
 

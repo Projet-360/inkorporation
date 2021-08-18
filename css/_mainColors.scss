@@ -27,6 +27,11 @@
       opacity: 0;
       transition: all 0s ease 0s;
     }
+
+    #grained {
+      opacity: 0;
+      transition: all 0s ease 0s;
+    }
   }
 }
 
@@ -54,6 +59,13 @@
 
   .stars {
     opacity: 1;
+  }
+  #grained {
+    opacity: .3 !important;
+  }
+  .twinkling {
+    opacity: 1 !important;
+    transition: all 1s ease 1s !important;
   }
 }
 
@@ -120,7 +132,9 @@
       top: 0;
       left: 0;
       z-index: 10;
-      opacity: .4;
+      opacity: .3;
+      filter: sepia(1);
+      transition: all 1s ease;
   }
 
   @keyframes move-twink-back {

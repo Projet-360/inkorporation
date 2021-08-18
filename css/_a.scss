@@ -71,10 +71,16 @@
             }
         }
 
+        @media screen and (max-width: 959px) {
+            .ink-a-js-up {
+                display: none;
+            }
+        }
+
         .ink-a-js-img {
             width: 330px;
             z-index: 10;
-            position: absolute;            
+            position: absolute;
         }
 
         .ink-a-js-sell {
@@ -88,7 +94,7 @@
 
             position: absolute;
             z-index: 20;
-            transform: translateY(-280px);
+            transform: translateY(-172px);
 
             .ink-a-js-sell-texte-bouton {
                 display: flex;
@@ -156,7 +162,7 @@
                     .ink-a-js-sell-texte-bouton-href {
                         color: white;
                         filter: drop-shadow(5px 5px 4px #000000);
-                        letter-spacing: 8px;
+                        letter-spacing: 3px;
                     }
                 }
             }
