@@ -38,13 +38,7 @@
     }
 
     .ink-d-js-item {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      align-content: center;
-      align-items: center;
-      position: relative;
+      @include ColumnBetweenCenter;
 
       border: 1px solid rgb(255, 206, 114);
       z-index: 10;
@@ -125,37 +119,25 @@
     }
 
     .optionsContainer {
+      @include RowCenterCenter;
+
       position: absolute;
       transform: translate(81px, 43vh);
       z-index: 200;
       cursor: pointer;
       height: 30px;
-      width: 30px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-content: center;
-      align-items: center;
+      width: 30px;      
 
       .botón {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
+        @include RowCenterCenter;
+
         height: 30px;
         width: 30px;
       }
 
       .icono {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
+        @include RowCenterCenter;
+        
         height: 30px;
         width: 30px;
 

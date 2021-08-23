@@ -1,11 +1,6 @@
 
 .ink-navigation-list-item-button {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: stretch;
-  align-items: center;
+  @include RowCenterCenter;
 
   height: 4.5vh;
   line-height: 5vh;

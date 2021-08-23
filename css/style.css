@@ -599,13 +599,13 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -719,22 +719,22 @@ body::-webkit-scrollbar-thumb {
 }
 
 .loader-4 {
-  display: -ms-flexbox;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+      -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-pack: center;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
+      -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: stretch;
-  align-content: stretch;
-  -ms-flex-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
+      -ms-flex-align: center;
           align-items: center;
   width: 100vw;
   height: 100vh;
@@ -814,13 +814,13 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -909,9 +909,9 @@ body::-webkit-scrollbar-thumb {
       justify-content: space-around;
   -ms-flex-line-pack: end;
       align-content: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   width: 100vw;
   background: #1b1b1b00;
@@ -929,6 +929,23 @@ body::-webkit-scrollbar-thumb {
 }
 
 .ink-navigation .menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 12vh;
   width: 11vw;
   list-style: none;
@@ -941,23 +958,6 @@ body::-webkit-scrollbar-thumb {
   border-bottom: 8px solid #068fe9;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .ink-navigation .menu li:hover {
@@ -1009,26 +1009,26 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (min-width: 768px) {
   .menu-board {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    height: 30vh !important;
-    width: 91vw !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -ms-flex-line-pack: stretch;
-        align-content: stretch;
+    -ms-flex-line-pack: center;
+        align-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    display: flex !important;
+    height: 30vh !important;
+    width: 91vw !important;
     position: absolute;
     top: 30vh;
   }
@@ -1152,13 +1152,13 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1181,7 +1181,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .ink-a .ink-a-js .ink-a-js-img {
-  width: 330px;
+  width: 250px;
   z-index: 10;
   position: absolute;
 }
@@ -1199,8 +1199,8 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1209,6 +1209,12 @@ body::-webkit-scrollbar-thumb {
   z-index: 20;
   -webkit-transform: translateY(-172px);
           transform: translateY(-172px);
+}
+
+@media (max-width: 599px) {
+  .ink-a .ink-a-js .ink-a-js-sell {
+    display: none;
+  }
 }
 
 .ink-a .ink-a-js .ink-a-js-sell .ink-a-js-sell-texte-bouton {
@@ -1303,12 +1309,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .ink-a .ink-a-js .ink-a-js-link {
-  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  -webkit-transform: translate(0px, 36vh);
-          transform: translate(0px, 36vh);
-  text-transform: uppercase;
-  z-index: 5;
-  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1316,16 +1316,22 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  -webkit-transform: translate(0px, 36vh);
+          transform: translate(0px, 36vh);
+  text-transform: uppercase;
+  z-index: 5;
+  position: fixed;
 }
 
 .ink-a .ink-a-js .ink-a-js-link .ink-a-js-link-a {
@@ -1336,13 +1342,13 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1409,8 +1415,8 @@ body::-webkit-scrollbar-thumb {
           align-items: center;
   z-index: 100;
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
@@ -1597,22 +1603,22 @@ body::-webkit-scrollbar-thumb {
 }
 
 .ink-c .ink-c-js .ink-c-js-text {
-  display: -ms-flexbox;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+      -ms-flex-direction: column;
           flex-direction: column;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-pack: center;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
+      -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
-  align-content: center;
-  -ms-flex-align: center;
+      align-content: center;
   -webkit-box-align: center;
+      -ms-flex-align: center;
           align-items: center;
   position: absolute;
   padding: 10px;
@@ -1661,22 +1667,22 @@ body::-webkit-scrollbar-thumb {
 }
 
 .ink-c .ink-c-js .ink-c-js-text a {
-  display: -ms-flexbox;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+      -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -ms-flex-pack: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
+      -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
-  align-content: center;
-  -ms-flex-align: center;
+      align-content: center;
   -webkit-box-align: center;
+      -ms-flex-align: center;
           align-items: center;
   font-size: 25px;
   font-weight: bold;
@@ -1759,8 +1765,8 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1769,7 +1775,6 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
   border: 1px solid #ffce72;
   z-index: 10;
   width: 310px;
@@ -1851,13 +1856,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .ink-d .ink-d-js .optionsContainer {
-  position: absolute;
-  -webkit-transform: translate(81px, 43vh);
-          transform: translate(81px, 43vh);
-  z-index: 200;
-  cursor: pointer;
-  height: 30px;
-  width: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1865,8 +1863,8 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1875,6 +1873,13 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  -webkit-transform: translate(81px, 43vh);
+          transform: translate(81px, 43vh);
+  z-index: 200;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
 }
 
 .ink-d .ink-d-js .optionsContainer .botón {
@@ -1885,8 +1890,8 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1907,8 +1912,8 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2244,20 +2249,20 @@ body {
 }
 
 main {
-  display: -ms-flexbox;
   display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2284,13 +2289,13 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2306,8 +2311,6 @@ main {
 .ink-d-js,
 .ink-e-js,
 .ink-f-js {
-  height: 100vh;
-  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2315,16 +2318,18 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 /*  FIN GSAP ACTIF DEUXIEME CONTENANT */

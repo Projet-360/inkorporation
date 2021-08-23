@@ -52,13 +52,8 @@
             }
         }
 
-        .ink-a-js-up {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-content: stretch;
-            align-items: center;
+        .ink-a-js-up { 
+            @include ColumnCenterCenter;
 
             transform: translateY(-160px);
 
@@ -78,31 +73,26 @@
         }
 
         .ink-a-js-img {
-            width: 330px;
+            width: 250px;
             z-index: 10;
             position: absolute;
         }
 
         .ink-a-js-sell {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-content: stretch;
-            align-items: center;
+            @include RowCenterCenter;
+
             position: relative;
 
             position: absolute;
             z-index: 20;
             transform: translateY(-172px);
 
+            @include for-phone-only {
+                display: none;
+            }
+
             .ink-a-js-sell-texte-bouton {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-content: center;
-                align-items: center;
+                @include RowCenterCenter;
 
                 margin-top: 15px;
                 background-color: unset;
@@ -130,12 +120,7 @@
                 }
 
                 .ink-a-js-sell-texte-bouton-href {
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    align-content: center;
-                    align-items: center;
+                    @include RowCenterCenter;
 
                     width: 250px;
                     height: 51px;
@@ -169,26 +154,16 @@
         }
 
         .ink-a-js-link {
+            @include ColumnCenterCenter;
             font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
             transform: translate(0px, 36vh);
             text-transform: uppercase;
             z-index: 5;
 
-            position: fixed;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-content: stretch;
-            align-items: center;
+            position: fixed;            
 
             .ink-a-js-link-a {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                justify-content: center;
-                align-content: stretch;
-                align-items: center;
+                @include RowCenterCenter;
 
                 color: rgb(255, 255, 255);
                 font-size: 40px;
@@ -237,17 +212,12 @@
     }
 
     .ink-a-js-enter {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-
+        @include RowCenterCenter;
+        
         z-index: 100;
         position: absolute;
-        width: 80px;
-        height: 80px;
+        width: 65px;
+        height: 65px;
         font-size: 20px;
         text-transform: uppercase;
         text-decoration: none;

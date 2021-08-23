@@ -1,12 +1,7 @@
 .ink-navigation {
   
   .menuToggle {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: center;
+    @include ColumnCenterCenter;
 
     position: relative;
     width: 5%;
@@ -94,12 +89,7 @@
  * at the top left of the screen
  */
   .menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: flex-end;
-    align-items: flex-end;
+    @include RowAroundBottom;
 
     position: absolute;
     width: 100vw;
@@ -115,6 +105,8 @@
   }
 
   .menu li {
+    @include RowCenterCenter;
+
     height: 12vh;
     width: 11vw;
     list-style: none;
@@ -126,13 +118,6 @@
     cursor: pointer;
     border-bottom: 8px solid #068fe9;
     transition: all .5s ease;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: center;
 
     &:hover {
       transition: all .5s ease;
@@ -179,15 +164,11 @@
 
 @media screen and (min-width: 768px) {
   .menu-board {
+    @include RowBetweenCenter;
+
     display: flex !important;
     height: 30vh !important;
     width: 91vw !important;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-content: stretch;
-    align-items: center;
     position: absolute;
     top: 30vh;
 

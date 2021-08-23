@@ -1,3 +1,6 @@
+@import './Mixin/Flex/Flex',
+        './Mixin/mediaQueries/mediaQueries';
+
 @import 
 '_scroll-bar.scss',
 '_navigation.scss',
@@ -33,14 +36,8 @@ body {
 }
 
 main {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: stretch;
-  align-items: center;
+  @include ColumnCenterCenter;
+
   overflow: hidden;
   position: absolute;
   z-index: 10;
@@ -60,12 +57,8 @@ main {
   width: 100vw;
   z-index: 20;
 
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: stretch;
-  align-items: center;
+  @include RowCenterCenter;
+
   scroll-snap-align: start;
 }
 /*  FIN BALISE SECTION PREMIER CONTENANT */
@@ -78,14 +71,10 @@ main {
 .ink-d-js,
 .ink-e-js,
 .ink-f-js {
+  @include RowCenterCenter;
+  
   height: 100vh;
   width: 100vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: stretch;
-  align-items: center;
 }
 /*  FIN GSAP ACTIF DEUXIEME CONTENANT */
 
