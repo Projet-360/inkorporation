@@ -46,7 +46,6 @@ bOutTM.add([
   }, {
     scale: 69,
     y: "-100%",
-    display: "none",
     opacity: 1,
     force3D: false,
     ease: Linear.easeNone,

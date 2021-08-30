@@ -1,5 +1,10 @@
 .navigation {
-    @include RowCenterCenter;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 
     position: fixed;
     width: 70vw;
@@ -22,14 +27,24 @@
     }
     
     .navigation-sidebar {
-        @include ColumnCenterCenter;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
 
         width: 100%;
         height: 100vh;
         position: absolute;
 
         .navigation-sidebar-button {
-            @include ColumnCenterCenter;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
 
             position: absolute;
             transform:rotate(90deg);
@@ -188,7 +203,12 @@
             }
 
             .navigation-span-list-item-list {
-                @include RowBetweenCenter;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-content: center;
+                align-items: center;
 
                 visibility: hidden;
                 opacity: 0;

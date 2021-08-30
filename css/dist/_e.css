@@ -1,0 +1,99 @@
+.ink-e {
+  height: 100vh !important;
+}
+.ink-e .ink-e-js {
+  top: 0;
+  position: fixed;
+  z-index: 5;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.ink-e .ink-e-js .ink-e-js-text {
+  text-align: justify;
+  text-align-last: center;
+  margin-bottom: 0;
+}
+.ink-e .ink-e-js .ink-e-js-item {
+  border: 1px solid #db1d1d;
+  padding: 20px;
+  z-index: 10;
+  width: 325px;
+  height: 325px;
+  transform: translate3d(0px, -40px, 0px);
+}
+.ink-e .ink-e-js .ink-e-js-item .ink-e-js-item-img {
+  width: 73px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.ink-e .ink-e-js .ink-e-js-item .ink-e-js-item-title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  font-size: 118px;
+  font-weight: 100;
+  line-height: 110px;
+}
+.ink-e .ink-e-js .ink-e-js-item .ink-e-js-item-text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  line-height: 20px;
+  text-align: justify;
+  padding: 0px 0px;
+  font-size: small;
+  margin-bottom: 0;
+}
+.ink-e .ink-e-js .ink-e-js-item .ink-e-js-item-play {
+  width: 40px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: pointer;
+}
+.ink-e .ink-e-js svg {
+  height: 300px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.ink-e .ink-e-js .depthmap,
+.ink-e .ink-e-js .deep-depthmap {
+  mix-blend-mode: soft-light;
+}
+.ink-e .ink-e-js .shadows {
+  mix-blend-mode: multiply;
+}
+.ink-e .ink-e-js .highlight {
+  mix-blend-mode: screen;
+}
+.ink-e .ink-e-js .weather {
+  opacity: 0.2;
+  mix-blend-mode: overlay;
+}
+.ink-e .ink-e-js .planet {
+  transform: rotate(-5deg);
+  transform-origin: 50% 50%;
+}
+.ink-e .ink-e-js .planet image {
+  animation: rotation 20s linear infinite;
+}
+.ink-e .ink-e-js .planet .weather {
+  animation: rotation 20s linear infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-1000px, 0);
+  }
+}

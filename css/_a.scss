@@ -1,8 +1,341 @@
 .ink-a {
     .ink-a-js {
+        top: 0;
         z-index: 0;
 
-        color: white;
+        .ink-a-js-lefttop {
+            position: absolute;
+            text-shadow: -1px 5px 3px rgba(0, 0, 0, 1);
+            font-size: 20px;
+            width: 200px;
+            left: 20px;
+            top: 20px;
+            margin: 0;
+            transform: rotate(0deg);
+            text-transform: capitalize;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+            color: white;
+
+            &::after {
+                content: "Multidimensional composer";
+                transform: rotate(90deg);
+                position: absolute;
+                right: 20px;
+                top: 189px;
+                width: 350px;
+                font-weight: 100;
+            }
+        }
+
+        .ink-a-js-leftbottom {
+            position: absolute;
+            text-shadow: -1px 5px 3px rgba(0, 0, 0, 1);
+            font-size: 20px;
+            left: 20px;
+            bottom: 20px;
+            margin: 0;
+            transform: rotate(0deg);
+            text-transform: capitalize;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+            color: white;
+
+            &::after {
+                content: "2021";
+                transform: rotate(90deg);
+                position: absolute;
+                right: -17px;
+                top: 80px;
+                width: 270px;
+                font-weight: 100;
+            }
+        }
+
+        .ink-a-js-up {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: stretch;
+            align-items: center;
+
+            transform: translateY(-160px);
+
+            #ink-a-js-up-svg {
+                width: 200px;
+            }
+
+            .ink-a-js-up-date {
+                height: 100px;
+            }
+        }
+
+        .ink-a-js-img {
+            width: 360px;
+            z-index: 10;
+            position: absolute;            
+        }
+
+        .ink-a-js-sell {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: stretch;
+            align-items: center;
+            position: relative;
+
+            position: absolute;
+            z-index: 20;
+            transform: translateY(-160px);
+
+            .ink-a-js-sell-texte-bouton {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+
+                margin-top: 15px;
+                background-color: unset;
+                padding: 10px 20px;
+                position: relative;
+                margin: 10px 115px;
+
+                font-weight: 500;
+                width: 250px;
+                height: 51px;
+                border-image-slice: 1;
+                border-width: 2px;
+                border-image-source: linear-gradient(to left, #67aeff, #153aa0);
+
+                &:before {
+                    content: "";
+                    background: linear-gradient(to left, #67aeff, #153aa0);
+                    width: 0px;
+                    height: 48px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    transition: all .5s ease;
+                    z-index: 0;
+                }
+
+                .ink-a-js-sell-texte-bouton-href {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+
+                    width: 250px;
+                    height: 51px;
+                    margin-top: 22px;
+
+                    font-family: 'Raleway', sans-serif;
+                    position: absolute;
+                    text-transform: uppercase;
+                    color: #67aeff;
+                    font-size: 20px;
+                    font-weight: 300;
+                    text-decoration: none;
+                    display: block;
+                    transition: all .5s ease;
+                    z-index: 10;
+                    letter-spacing: 0px;
+                }
+
+                &:hover {
+                    &::before {
+                        width: 248px;
+                    }
+
+                    .ink-a-js-sell-texte-bouton-href {
+                        color: white;
+                        filter: drop-shadow(5px 5px 4px #000000);
+                        letter-spacing: 8px;
+                    }
+                }
+            }
+        }
+
+        .ink-a-js-link {
+            font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            transform: translate(0px, 36vh);
+            text-transform: uppercase;
+            z-index: 5;
+
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: stretch;
+            align-items: center;
+
+            .ink-a-js-link-a {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-content: stretch;
+                align-items: center;
+
+                color: rgb(255, 255, 255);
+                font-size: 40px;
+                font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+                text-shadow: -1px 5px 3px #00000080;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: 100;
+                z-index: 5;
+
+                padding: 0;
+                border: 2px solid #fff;
+                padding: 0;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                transition: all 0.8s ease;
+
+                &:hover {
+                    width: 70px;
+                    height: 70px;
+                    transform: rotate(90deg);
+                    color: rgb(0, 0, 0);
+                    font-size: 25px;
+                    border: 6px solid rgb(0, 0, 0);
+                }
+            }
+        }
+
+        .ink-a-js-ticket {
+            position: absolute;
+            width: 65px;
+            left: 60px;
+            bottom: 60px;
+            border: 1px solid white;
+            padding: 10px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .ink-a-js-ticket {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 760px) {}
+    }
+
+    .ink-a-js-enter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+        z-index: 100;
+        position: absolute;
+        width: 80px;
+        height: 80px;
         font-size: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: "Raleway";
+        color: white;
+        border: 1px solid white;
+        padding: 10px;
+        transition: all .5s ease;
+        transform: translate(0vw, 200px) rotate(0deg);
+
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-align: center;
+        color: #00c8ff;
+        background-image: -webkit-linear-gradient(92deg, #ffffff, #ffffff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: hue 20s infinite linear;
+        border-color: #67aeff;
+
+        .ink-a-js-enter-span {
+            transition: all .5s ease;
+            position: absolute;
+            content: "enter";
+            font-weight: 400;
+            font-size: 20px;
+            letter-spacing: 2px;
+            text-align: center;
+            color: #00c8ff;
+            background-image: -webkit-linear-gradient(92deg, #ffffff, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: hue 20s infinite linear;
+            border-color: #67aeff;
+        }
+
+        &:hover {
+            font-size: 30px;
+            transform: translate(0vw, 200px) rotate(45deg);
+            border-color: #67aeff;
+            color: #67aeff;
+            background-image: -webkit-linear-gradient(92deg, #031cbf, #00d0ff);
+
+            .ink-a-js-enter-span {
+                font-size: 30px;
+                transform: rotate(-90deg);
+                background-image: -webkit-linear-gradient(92deg, #031cbf, #00d0ff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -webkit-animation: hue 20s infinite linear;
+                border-color: #67aeff;
+
+                &.two {
+                    transform: rotate(0deg) !important;
+                }
+            }
+        }
+    }
+
+    svg {
+        filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=NaN, Strength=5);
+    }
+
+    .ink-a-js-img-logo {
+        fill: url("#logo-gradient");
+        transition: all 2s ease;
+
+        stop {
+            -webkit-transition: 2s ease;
+            transition: 2s ease;
+        }
+    }
+
+    .date {
+        fill: url("#date-gradient");
+        transition: all 2s ease;
+
+        stop {
+            -webkit-transition: 2s ease;
+            transition: 2s ease;
+        }
+    }
+}
+
+@-webkit-keyframes hue {
+    from {
+        -webkit-filter: hue-rotate(-30deg);
+    }
+
+    50% {
+        -webkit-filter: hue-rotate(30deg);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(-30deg);
     }
 }

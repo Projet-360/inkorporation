@@ -5,11 +5,7 @@ import './d.js'
 import './e.js'
 import './f.js'
 import './visualizer.js'
-import './main-color.js'
-import './grained.js'
-//import './navigation.js'
-
-
+import './navigation.js'
 
 window.onload = function () {
   TweenLite.ticker.fps(30); 
@@ -37,7 +33,69 @@ window.onload = function () {
   TweenMax.set('body', {
     opacity: 1,
   })
- 
+
+
+
+  var options = {
+    "animate": true,
+    "patternWidth": 100,
+    "patternHeight": 100,
+    "grainOpacity": 0.05,
+    "grainDensity": 1,
+    "grainWidth": 1,
+    "grainHeight": 1
+  }
+  grained("#stars", options);
+  
+  /*
+  background-color :rgb(204, 204, 204)
+  */
+
+
+
+
+  // FIN DES SETS DES ANIMATIONS
+
+
+  // CHANGEMENT DE LA COULEUR DU BODY
+
+  var GeneralSM = new ScrollMagic.Controller();
+
+
+  var ourScene = new ScrollMagic.Scene({
+      triggerElement: '.ink-b',
+      triggerHook: .5,
+    })
+    .setClassToggle(".main-ink", "b")
+    .addTo(GeneralSM)
+
+  var ourScene = new ScrollMagic.Scene({
+      triggerElement: '.ink-c',
+      triggerHook: .5,
+    })
+    .setClassToggle(".main-ink", "c")
+    .addTo(GeneralSM)
+
+  var ourScene = new ScrollMagic.Scene({
+      triggerElement: '.ink-d',
+      triggerHook: 0.9,
+    })
+    .setClassToggle(".main-ink", "d")
+    .addTo(GeneralSM)
+
+  var ourScene = new ScrollMagic.Scene({
+      triggerElement: '.ink-e',
+      triggerHook: 0.8,
+    })
+    .setClassToggle(".main-ink", "e")
+    .addTo(GeneralSM)
+
+  var ourScene = new ScrollMagic.Scene({
+      triggerElement: '.ink-f',
+      triggerHook: 0.9,
+    })
+    .setClassToggle(".main-ink", "f")
+    .addTo(GeneralSM)
 }
 
 

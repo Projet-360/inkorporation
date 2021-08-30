@@ -99,7 +99,7 @@ cOutTM.add([
     force3D: false
   }, {
     scale: 69,
-    y: "-200%",
+    y: "-100%",
     opacity: 1,
     force3D: false,
     ease: Linear.easeNone,
